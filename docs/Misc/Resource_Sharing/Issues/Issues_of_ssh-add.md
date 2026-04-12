@@ -1,0 +1,1 @@
+直接在 Windows PowerShell 中使用 ssh-add 保存私钥到 ssh-agent 时可能会无法输入密码, 建议使用 WindowsTerminal.
