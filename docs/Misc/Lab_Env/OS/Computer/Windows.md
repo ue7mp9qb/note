@@ -300,7 +300,6 @@ Shut down, Take Snapshot: `deploy`
 |             [KeePassXC](https://keepassxc.org/)              |
 |             [LocalSend](https://localsend.org/)              |
 |            [LockHunter](https://lockhunter.com/)             |
-|                 [MEGAsync](https://mega.io/)                 |
 |       [Oracle VirtualBox](https://www.virtualbox.org/)       |
 |           [Pinta](https://www.pinta-project.com/)            |
 |               [PixPin](https://pixpinapp.com/)               |
@@ -308,6 +307,7 @@ Shut down, Take Snapshot: `deploy`
 |           [Proxifier](https://www.proxifier.com/)            |
 |        [scrcpy](https://github.com/Genymobile/scrcpy)        |
 |         [Stretchly](https://hovancik.net/stretchly/)         |
+|             [Syncthing](https://syncthing.net/)              |
 |            [TTime](https://ttime.timerecord.cn/)             |
 |     [TurboTop](https://www.savardsoftware.com/turbotop/)     |
 |                 [Typora](https://typora.io/)                 |

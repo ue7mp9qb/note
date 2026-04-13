@@ -108,15 +108,17 @@ https://127.0.0.1:8384/
 
 > ==记得使用 UFW 开放端口==
 
-### 2.2. 设置文件同步
+## 3. Usage
+
+### 3.1. 设置文件同步
 
 在控制台添加文件夹
 
 ![](./../../../../../images/%E9%85%8D%E7%BD%AE_Syncthing_%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/%E8%AE%BE%E7%BD%AE%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/debian/%E5%9C%A8%E6%8E%A7%E5%88%B6%E5%8F%B0%E6%B7%BB%E5%8A%A0%E6%96%87%E4%BB%B6%E5%A4%B9.png)
 
-### 2.2.1. 单向同步
+### 3.1.1. 单向同步
 
-### 2.2.1.1. Windows
+### 3.1.1.1. Windows
 
 常规设置
 
@@ -134,7 +136,7 @@ https://127.0.0.1:8384/
 
 ![](./../../../../../images/%E9%85%8D%E7%BD%AE_Syncthing_%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/%E8%AE%BE%E7%BD%AE%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/Windows/%E9%AB%98%E7%BA%A7%E8%AE%BE%E7%BD%AE.png)
 
-### 2.2.1.2. Debian
+### 3.1.1.2. Debian
 
 接受请求添加新文件夹
 
@@ -156,9 +158,9 @@ https://127.0.0.1:8384/
 
 ![](./../../../../../images/%E9%85%8D%E7%BD%AE_Syncthing_%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/%E8%AE%BE%E7%BD%AE%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/debian/%E9%AB%98%E7%BA%A7%E8%AE%BE%E7%BD%AE.png)
 
-### 2.2.2 双向同步
+### 3.1.2 双向同步
 
-### 2.2.2.1. Windows
+### 3.1.2.1. Windows
 
 常规设置
 
@@ -176,7 +178,7 @@ https://127.0.0.1:8384/
 
 ![](./../../../../../images/%E9%85%8D%E7%BD%AE_Syncthing_%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/%E8%AE%BE%E7%BD%AE%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/%E9%AB%98%E7%BA%A7%E8%AE%BE%E7%BD%AE.png)
 
-### 2.2.2.2. Debian
+### 3.1.2.2. Debian
 
 常规设置
 

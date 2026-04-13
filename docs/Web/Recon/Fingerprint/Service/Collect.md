@@ -34,3 +34,10 @@ rememberMe=
 root@kali:~# wpscan --url http://wordpress.local --enumerate p
 ```
 
+## [Discuz](http://www.discuz.vip/)
+
+![Discuz](./../../../../../images/Fingerprint/Service/Discuz.png)
+
+```
+Discuz
+```
