@@ -265,17 +265,17 @@ Take Snapshot: `init`
 
 |                            Tools                             |
 | :----------------------------------------------------------: |
-| [proxychains-ng](https://github.com/jadensalas469466/notes/blob/main/docs/Misc/Lab_Env/Proxy/Tools/Local/proxychains-ng.md) |
-| [proxy](https://github.com/jadensalas469466/notes/blob/main/docs/Misc/Lab_Env/Proxy/Tools/Local/proxy.md) |
-| [git](https://github.com/jadensalas469466/notes/blob/main/docs/Misc/Lab_Env/Development/git.md) |
-| [python](https://github.com/jadensalas469466/notes/blob/main/docs/Misc/Lab_Env/Language/python.md) |
-| [go](https://github.com/jadensalas469466/notes/blob/main/docs/Misc/Lab_Env/Language/go.md) |
-| [docker](https://github.com/jadensalas469466/notes/blob/main/docs/Misc/Lab_Env/Development/docker.md) |
-| [vulfocus](https://github.com/jadensalas469466/notes/blob/main/docs/Misc/Vuln_Labs/Local/Docker/vulfocus.md) |
-| [naabu](https://github.com/jadensalas469466/notes/blob/main/docs/Web/Recon/Port/naabu.md) |
-| [httpx-toolkit](https://github.com/jadensalas469466/notes/blob/main/docs/Web/Recon/HTTP/httpx-toolkit.md) |
-| [katana](https://github.com/jadensalas469466/notes/blob/main/docs/Web/Recon/Crawl/katana.md) |
-| [xsstrike](https://github.com/jadensalas469466/notes/blob/main/docs/Web/Scan/Active/XSS/xsstrike.md) |
+| [proxychains-ng](https://www.kali.org/tools/proxychains-ng/) |
+| [proxy](https://raw.githubusercontent.com/ue7mp9qb/scripts/refs/heads/main/proxy_install.sh) |
+|                 [git](https://git-scm.com/)                  |
+|              [python](https://www.python.org/)               |
+|                    [go](https://go.dev/)                     |
+|              [docker](https://www.docker.com/)               |
+|       [vulfocus](https://fofapro.github.io/vulfocus/)        |
+|          [naabu](https://www.kali.org/tools/naabu/)          |
+|  [httpx-toolkit](https://www.kali.org/tools/httpx-toolkit/)  |
+|     [katana](https://github.com/projectdiscovery/katana)     |
+|       [xsstrike](https://www.kali.org/tools/xsstrike/)       |
 
 Take Snapshot: `deploy` 
 
