@@ -289,7 +289,8 @@ Shut down, Take Snapshot: `deploy`
 | :----------------------------------------------------------: |
 |               [7-Zip](https://www.7-zip.org/)                |
 |            [Anytxt Searcher](https://anytxt.net/)            |
-| [Burp Suite Professional](https://portswigger.net/burp/releases#professional) |
+|              [aria2](https://aria2.github.io/)               |
+| [Burp Suite](https://portswigger.net/burp/releases#professional) |
 | [ContextMenuManager](https://bluepointlilac.github.io/ContextMenuManager/) |
 |           [Everything](https://www.voidtools.com/)           |
 |             [Geek](https://geekuninstaller.com/)             |
@@ -305,6 +306,7 @@ Shut down, Take Snapshot: `deploy`
 |               [PixPin](https://pixpinapp.com/)               |
 | [PowerShell](https://apps.microsoft.com/detail/9mz1snwt0n5d?hl=en-US&gl=DE) |
 |           [Proxifier](https://www.proxifier.com/)            |
+|         [qBittorrent](https://www.qbittorrent.org/)          |
 |        [scrcpy](https://github.com/Genymobile/scrcpy)        |
 |         [Stretchly](https://hovancik.net/stretchly/)         |
 |             [Syncthing](https://syncthing.net/)              |
