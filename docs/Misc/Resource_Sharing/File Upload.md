@@ -14,7 +14,7 @@ In some cases, the act of uploading the file is in itself enough to cause damage
 
 ## 2. Test
 
-### 2.1. Web Shell upload
+### 2.1. Web Shell Upload
 
 使用以下命令避免对目标造成危害
 
@@ -42,19 +42,15 @@ Host: example.com
 Content-Disposition: form-data; name="avatar"; filename="../shell.php"
 ```
 
-> 请求中出现 `Content-Disposition` 则可能存在 Path Traversal
-
 > 若返回 `The file avatars/shell.php has been uploaded.` 则需要将 `../` 编码绕过
 
 ### 2.4. Extension Blacklist Bypass
 
-若无法上传 PHP 文件, 可创建一个 `.htaccess` 将 `.png` 文件以 PHP 的方式解析
+若 Apache 无法上传 PHP 文件, 可创建一个 `.htaccess` 将 `.png` 文件以 PHP 的方式解析
 
 ```
 AddType application/x-httpd-php .png
 ```
-
-> Apache 服务器专用
 
 ### 2.5. Obfuscated File Extension
 
