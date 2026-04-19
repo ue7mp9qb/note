@@ -16,7 +16,7 @@ A pleasant note-taking platform in native C++.
 
 ---
 
-References
+**References**
 
 - [vnote](https://github.com/vnotex/vnote)
 

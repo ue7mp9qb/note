@@ -20,6 +20,6 @@ A next-generation crawling and spidering framework.
 
 ---
 
-References
+**References**
 
 - [katana](https://github.com/projectdiscovery/katana)

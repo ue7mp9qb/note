@@ -20,7 +20,7 @@ Fast and multi-purpose HTTP toolkit.
 
 ---
 
-References
+**References**
 
 - [httpx-toolkit](https://www.kali.org/tools/httpx-toolkit/)
 

@@ -34,7 +34,7 @@ A utility to detect various technology for a given IP address.
 
 ---
 
-References
+**References**
 
 - [cdncheck](https://github.com/projectdiscovery/cdncheck)
 

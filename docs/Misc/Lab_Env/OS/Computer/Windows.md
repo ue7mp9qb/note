@@ -301,6 +301,7 @@ Shut down, Take Snapshot: `deploy`
 |             [KeePassXC](https://keepassxc.org/)              |
 |             [LocalSend](https://localsend.org/)              |
 |            [LockHunter](https://lockhunter.com/)             |
+|               [OpenVPN](https://openvpn.net/)                |
 |       [Oracle VirtualBox](https://www.virtualbox.org/)       |
 |           [Pinta](https://www.pinta-project.com/)            |
 |               [PixPin](https://pixpinapp.com/)               |
@@ -736,7 +737,7 @@ Shutdown settings
 
 ---
 
-References
+**References**
 
 - [Windows](https://learn.microsoft.com/en-us/windows/)
 

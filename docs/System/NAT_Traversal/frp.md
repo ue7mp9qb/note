@@ -6,7 +6,7 @@ A fast reverse proxy to help you expose a local server behind a NAT or firewall 
 
 ```
 ┌──(root@kali)-[~]
-└─$ curl -fsSL https://github.com/jadensalas469466/script/raw/main/frp_install.sh | bash
+└─$ curl -fsSL https://github.com/ue7mp9qb/scripts/raw/main/frp_install.sh | bash
 ```
 
 ## 2. Init
@@ -80,7 +80,7 @@ echo $! > ~/frpc-pid.log
 
 ---
 
-References
+**References**
 
 - [frp](https://github.com/fatedier/frp)
 

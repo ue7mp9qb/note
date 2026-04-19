@@ -37,7 +37,7 @@ root@debian:~# wget "https://github.com/mack-a/v2ray-agent/raw/master/install.sh
 
 ---
 
-References
+**References**
 
 - [v2ray-agent](https://github.com/mack-a/v2ray-agent)
 

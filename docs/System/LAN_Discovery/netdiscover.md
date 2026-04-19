@@ -32,6 +32,6 @@ Active/passive network address scanner using ARP requests.
 
 ---
 
-References
+**References**
 
 - [netdiscover](https://www.kali.org/tools/netdiscover/)

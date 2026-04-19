@@ -11,6 +11,6 @@ LibreOffice is a private, free and open source office suite – the successor pr
 
 ---
 
-References
+**References**
 
 - [LibreOffice](https://www.libreoffice.org/)

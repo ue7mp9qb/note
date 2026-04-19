@@ -34,7 +34,7 @@ The open source AI code editor.
 
 ---
 
-References
+**References**
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Visual Studio Code documentation](https://code.visualstudio.com/docs)

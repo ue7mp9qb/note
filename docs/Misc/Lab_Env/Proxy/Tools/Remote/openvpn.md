@@ -1,25 +1,21 @@
-Enables you to securely access your organization's network resources.
+Control access, reduce costs, and remain compliant with a fast Zero Trust VPN.
 
-## 1. Install
+## 1. Init
 
-安装
-
-```
-┌──(nemo@debian)-[~]
-└─$ sudo apt install -y openvpn
-```
+Windows 下设置 `Launch Preferences` 为 `None`
 
 ## 2. Usage
 
 指定配置文件运行
 
 ```
-┌──(nemo@debian)-[~]
-└─$ sudo openvpn --config *.ovpn
+┌──(root㉿kali)-[~]
+└─# openvpn --config *.ovpn
 ```
 
 ---
 
-References
+**References**
 
-- [OpenVPN](https://openvpn.net/)
+- [openvpn](https://openvpn.net/)
+

@@ -47,7 +47,7 @@ Alt Arrow 切换分屏
 
 ---
 
-References
+**References**
 
 - [WindowsTerminal](https://github.com/microsoft/terminal)
 

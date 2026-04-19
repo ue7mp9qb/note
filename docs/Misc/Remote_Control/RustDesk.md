@@ -18,6 +18,6 @@ An open-source remote desktop application designed for self-hosting, as an alter
 
 ---
 
-References
+**References**
 
 - [RustDesk](https://rustdesk.com/)

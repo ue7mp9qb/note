@@ -102,7 +102,7 @@ WshShell.Run command, 1
 
 ---
 
-References
+**References**
 
 - [Adoptium Java](https://adoptium.net/temurin/releases)
 - [Oracle Java](https://www.oracle.com/java/technologies/java-se-glance.html)

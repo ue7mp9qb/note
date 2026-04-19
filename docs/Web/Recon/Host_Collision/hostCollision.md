@@ -63,7 +63,7 @@ cd "$(dirname "$(readlink -f "$0")")"
 
 ---
 
-References
+**References**
 
 - [hostCollision](https://github.com/alwaystest18/hostCollision)
 

@@ -58,10 +58,9 @@ PS C:\Users\null> ssh null@127.0.0.1
 
 |                            Server                            |
 | :----------------------------------------------------------: |
-| [配置 SSH 密钥对连接](https://keithpeck177271.gitbook.io/notes/docs/misc/lab_env/pei-zhi-ssh-mi-yao-dui-lian-jie) |
-| [ufw](https://keithpeck177271.gitbook.io/notes/misc/security-response/firewall/ufw) |
-| [fail2ban](https://keithpeck177271.gitbook.io/notes/misc/security-response/ban/fail2ban) |
-| [xray](https://github.com/jadensalas469466/notes/blob/main/docs/Misc/Lab_Env/Proxy/Tools/Remote/xray.md) |
+| [配置 SSH 密钥对连接](https://github.com/ue7mp9qb/notes/blob/main/docs/Misc/Lab_Env/%E9%85%8D%E7%BD%AE_SSH_%E5%AF%86%E9%92%A5%E5%AF%B9%E8%BF%9E%E6%8E%A5.md) |
+| [ufw](https://github.com/ue7mp9qb/notes/blob/main/docs/Misc/Security_Response/Firewall/ufw.md) |
+| [fail2ban](https://github.com/ue7mp9qb/notes/blob/main/docs/Misc/Security_Response/Ban/fail2ban.md) |
 
 ## 3. Usage
 
@@ -328,7 +327,7 @@ sudo adduser null
 
 ---
 
-References
+**References**
 
 - [Debian](https://www.debian.org/)
 - [Debian Docs](https://www.debian.org/doc/)

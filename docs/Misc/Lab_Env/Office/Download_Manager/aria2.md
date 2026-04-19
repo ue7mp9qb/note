@@ -30,7 +30,7 @@ PS C:\Users\null> aria2c --all-proxy="http://127.0.0.1:10808" "https://example.c
 
 ---
 
-References
+**References**
 
 - [aria2](https://aria2.github.io/)
 

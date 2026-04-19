@@ -25,7 +25,7 @@ Intelligent WHOIS client.
 
 ---
 
-References
+**References**
 
 - [whois](https://www.kali.org/tools/whois/)
 

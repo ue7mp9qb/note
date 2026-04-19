@@ -78,7 +78,7 @@ Running  ssh-agent          OpenSSH Authentication Agent
 
 ---
 
-References
+**References**
 
 - [KeePassXC](https://keepassxc.org/)
 

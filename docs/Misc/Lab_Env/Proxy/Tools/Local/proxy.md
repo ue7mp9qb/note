@@ -6,7 +6,7 @@
 
 ```
 ┌──(root㉿kali)-[~]
-└─# curl -fsSL https://github.com/jadensalas469466/script/raw/main/proxy_install.sh | bash
+└─# curl -fsSL https://github.com/ue7mp9qb/scripts/raw/main/proxy_install.sh | bash
 ```
 
 加载环境变量
@@ -34,7 +34,7 @@
 
 ---
 
-References
+**References**
 
-- [proxy_install.sh](https://github.com/jadensalas469466/scripts/blob/main/proxy_install.sh)
+- [proxy_install.sh](https://github.com/ue7mp9qb/scripts/blob/main/proxy_install.sh)
 

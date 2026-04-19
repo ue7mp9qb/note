@@ -21,7 +21,7 @@ Fast, parallel, modular, login brute-forcer for network services.
 
 ---
 
-References
+**References**
 
 - [medusa](https://www.kali.org/tools/medusa/)
 

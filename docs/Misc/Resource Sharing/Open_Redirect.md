@@ -14,7 +14,7 @@ http://example.com?url=http://evil.com
 
 ---
 
-References
+**References**
 
 - [CWE-601: URL Redirection to Untrusted Site ('Open Redirect')](https://hackerone.com/hacktivity/cwe_discovery?id=cwe-601)
 - [URL跳转](https://wy.zone.ci/bugstypes_list.php?bugtype=URL%E8%B7%B3%E8%BD%AC)

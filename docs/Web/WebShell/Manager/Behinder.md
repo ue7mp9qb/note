@@ -30,6 +30,6 @@ WshShell.Run command, 1
 
 ---
 
-References
+**References**
 
 - [Behinder](https://github.com/rebeyond/Behinder)

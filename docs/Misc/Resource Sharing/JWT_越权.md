@@ -40,6 +40,6 @@ Header.Payload.
 
 ---
 
-References
+**References**
 
 - https://jwt.io/

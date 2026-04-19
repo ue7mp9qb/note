@@ -30,7 +30,7 @@ A feature-rich dictionary lookup program, supporting multiple dictionary formats
 
 ---
 
-References
+**References**
 
 - [GoldenDict](https://github.com/goldendict/goldendict)
 - [ECDICT](https://github.com/skywind3000/ECDICT)

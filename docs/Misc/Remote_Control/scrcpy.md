@@ -50,7 +50,7 @@ PS C:\Users\null> scrcpy
 
 ---
 
-References
+**References**
 
 - [scrcpy](https://github.com/Genymobile/scrcpy)
 

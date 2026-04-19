@@ -55,6 +55,6 @@ rsync is an open source utility that provides fast incremental file transfer.
 
 ---
 
-References
+**References**
 
 - [rsync](https://rsync.samba.org/)

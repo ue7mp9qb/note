@@ -72,7 +72,7 @@ Visit
 
 ---
 
-References
+**References**
 
 - [vulfocus](https://fofapro.github.io/vulfocus/#/)
 

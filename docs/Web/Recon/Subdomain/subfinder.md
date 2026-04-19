@@ -69,7 +69,7 @@ Subdomain discovery tool.
 
 ---
 
-References
+**References**
 
 - [subfinder](https://www.kali.org/tools/subfinder/)
 

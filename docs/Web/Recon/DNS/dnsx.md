@@ -41,7 +41,7 @@ Perform multiple dns queries.
 
 ---
 
-References
+**References**
 
 - [dnsx](https://www.kali.org/tools/dnsx/)
 

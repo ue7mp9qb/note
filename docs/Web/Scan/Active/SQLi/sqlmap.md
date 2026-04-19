@@ -62,6 +62,6 @@ Automatic SQL injection tool.
 
 ---
 
-References
+**References**
 
 - [sqlmap](https://www.kali.org/tools/sqlmap/)

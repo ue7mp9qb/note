@@ -51,7 +51,7 @@ null@debian:~$ dig @<dns_ip> mit.edu
 
 ---
 
-References
+**References**
 
 - [BIND 9](https://gitlab.isc.org/isc-projects/bind9)
 - [debian配置BIND DNS服务器](https://blog.csdn.net/qq_51470638/article/details/138235472)

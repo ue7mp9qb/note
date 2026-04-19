@@ -4,8 +4,6 @@
 
 1. 使用 [ClickjackPoc](https://github.com/Raiders0786/ClickjackPoc/tree/master) 批量检测可能存在 Clickjacking 的目标
 
-2. 使用 [Clickjacking.html](https://github.com/jadensalas469466/tools/blob/main/hack/PoC/Clickjacking.html) 测试
-
 ## 2. Exploit
 
 1. 使用 [Burp Clickbandit](https://portswigger.net/burp/documentation/desktop/tools/clickbandit) 自动生成 PoC 检测目标
@@ -16,7 +14,7 @@
 
 ---
 
-References
+**References**
 
 - [OWASP Clickjacking](https://owasp.org/www-community/attacks/Clickjacking)
 - [PortSwigger Clickjacking](https://portswigger.net/web-security/clickjacking)

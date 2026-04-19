@@ -24,6 +24,6 @@ A GUI client for Windows, Linux and macOS, support Xray and sing-box and others.
 
 ---
 
-References
+**References**
 
 - [V2rayN](https://github.com/2dust/v2rayN)

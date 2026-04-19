@@ -32,7 +32,7 @@ Redirect connections through socks/http proxies.
 
 ---
 
-References
+**References**
 
 - [proxychains-ng](https://www.kali.org/tools/proxychains-ng/)
 

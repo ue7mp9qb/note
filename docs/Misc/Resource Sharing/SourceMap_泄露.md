@@ -19,7 +19,7 @@ http://www.example.com/test.css.map 疑似存在sourcemap文件泄露
 
 ---
 
-References
+**References**
 
 - [0x3 漏洞二：sourcemap文件泄露漏洞](https://mp.weixin.qq.com/s/xFGHpYQSP5sQ_5kEXtolHA)
 

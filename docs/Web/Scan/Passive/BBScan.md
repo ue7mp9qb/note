@@ -106,6 +106,6 @@ pyenv exec python3.7 ./BBScan.py "$@"
 
 ---
 
-References
+**References**
 
 - [BBScan](https://github.com/lijiejie/BBScan)

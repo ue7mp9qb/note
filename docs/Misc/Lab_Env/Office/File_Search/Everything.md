@@ -18,7 +18,7 @@ View
 
 ---
 
-References
+**References**
 
 - [Everything](https://www.voidtools.com/)
 

@@ -62,7 +62,7 @@ tar –cZf [file_name].tar.Z *.jpg
 
 ---
 
-References
+**References**
 
 - [Tar](https://www.gnu.org/software/tar/)
 - [Documentation for Tar](https://www.gnu.org/software/tar/manual/)

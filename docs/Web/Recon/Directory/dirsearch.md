@@ -20,7 +20,7 @@ Web path scanner.
 
 ---
 
-References
+**References**
 
 - [dirsearch](https://www.kali.org/tools/dirsearch/)
 

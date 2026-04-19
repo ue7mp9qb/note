@@ -71,6 +71,6 @@ git config --global http.sslBackend schannel
 
 ---
 
-References
+**References**
 
 - [Git](https://git-scm.com/) 

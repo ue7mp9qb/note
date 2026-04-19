@@ -124,7 +124,7 @@ Login `vagrant:vagrant`
 
 ---
 
-References
+**References**
 
 - [metasploitable3](https://github.com/rapid7/metasploitable3)
 - [SMUMN Computer Science Department](http://cs.smumn.edu/)

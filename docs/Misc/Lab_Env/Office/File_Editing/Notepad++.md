@@ -22,6 +22,6 @@ Notepad++ is a free (as in “free speech” and also as in “free beer”) sou
 
 ---
 
-References
+**References**
 
 - [Notepad++](https://notepad-plus-plus.org/)

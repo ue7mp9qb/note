@@ -22,7 +22,7 @@ Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens. 
 
 ---
 
-References
+**References**
 
 - [Xray-install](https://github.com/XTLS/Xray-install)
 

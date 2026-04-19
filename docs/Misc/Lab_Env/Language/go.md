@@ -49,7 +49,7 @@ func main() {
 
 ---
 
-References
+**References**
 
 - [go](https://go.dev/)
 

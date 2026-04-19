@@ -80,7 +80,7 @@ PS C:\Users\nemo> certutil -hashfile .\debian-12.12.0-amd64-DVD-1.iso SHA256
 
 ---
 
-References
+**References**
 
 - [GnuPG](https://www.gnupg.org/)
 - [MIT Key Server](https://pgp.mit.edu/)

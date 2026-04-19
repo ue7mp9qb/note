@@ -13,7 +13,7 @@ graph TD
 
 ---
 
-References
+**References**
 
 - [TOR Fronting - Utilising Hidden Services for Privacy [Introduction]](https://www.youtube.com/watch?v=I3ovfrqcF0I)
 - [TOR Fronting - Utilising Hidden Services for Privacy [Tutorial]](https://www.youtube.com/watch?v=OARw7yg0Ypc)

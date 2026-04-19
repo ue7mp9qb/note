@@ -18,6 +18,6 @@ shuji example.js.map -o output
 
 ---
 
-References
+**References**
 
 - [shuji](https://github.com/paazmaya/shuji)

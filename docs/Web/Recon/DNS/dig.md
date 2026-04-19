@@ -25,7 +25,7 @@ dig  is a flexible tool for interrogating DNS name servers.
 
 ---
 
-References
+**References**
 
 - [dig](https://www.kali.org/tools/bind9/#dig)
 

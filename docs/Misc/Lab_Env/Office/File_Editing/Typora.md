@@ -28,7 +28,7 @@ General
 
 ---
 
-References
+**References**
 
 - [Typora](https://typora.io/)
 - [Typora Support](https://support.typora.io/)

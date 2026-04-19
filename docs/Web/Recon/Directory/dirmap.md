@@ -85,6 +85,6 @@ python3 ./dirmap.py "$@"
 
 ---
 
-References
+**References**
 
 - [Dirmap](https://github.com/H4ckForJob/dirmap)

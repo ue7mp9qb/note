@@ -12,7 +12,7 @@ A new bootable USB solution.
 
 ---
 
-References
+**References**
 
 - [Ventoy](https://www.ventoy.net/en/index.html)
 

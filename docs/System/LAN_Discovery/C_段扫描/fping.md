@@ -11,7 +11,7 @@ Sends ICMP ECHO_REQUEST packets to network hosts.
 
 ---
 
-References
+**References**
 
 - [fping](https://www.kali.org/tools/fping/)
 

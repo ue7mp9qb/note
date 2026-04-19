@@ -6,7 +6,7 @@ PS C:\Users\sec> irm https://get.activated.win | iex
 
 ---
 
-References
+**References**
 
 - [Microsoft Activation Scripts (MAS)](https://massgrave.dev/)
 

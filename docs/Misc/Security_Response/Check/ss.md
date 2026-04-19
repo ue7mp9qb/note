@@ -18,7 +18,7 @@ ss - another utility to investigate sockets
 
 ---
 
-References
+**References**
 
 - [ss](https://manpages.debian.org/stretch/iproute2/ss.8.en.html)
 

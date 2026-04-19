@@ -59,7 +59,7 @@ PS X:\windows\system32> restart-computer # 重启
 
 ---
 
-References
+**References**
 
 - [Windows PE (WinPE)](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro?view=windows-11)
 - [Download and install the Windows ADK](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install#other-adk-downloads)

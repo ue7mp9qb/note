@@ -47,6 +47,6 @@ example.onion
 
 ---
 
-References
+**References**
 
 - [tor](https://gitlab.com/torproject/tor)

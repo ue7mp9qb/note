@@ -186,7 +186,7 @@ git config --global --unset http.proxy                  # 移除代理
 
 ---
 
-References
+**References**
 
 - [git](https://git-scm.com/)
 

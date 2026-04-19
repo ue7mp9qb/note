@@ -29,7 +29,7 @@ Fast and customizable vulnerability scanner based on simple YAML based DSL.
 
 ---
 
-References
+**References**
 
 - [nuclei](https://www.kali.org/tools/nuclei/)
 

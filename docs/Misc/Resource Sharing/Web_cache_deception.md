@@ -32,7 +32,7 @@
 
 ---
 
-References
+**References**
 
 - [Web cache deception](https://portswigger.net/web-security/web-cache-deception)
 

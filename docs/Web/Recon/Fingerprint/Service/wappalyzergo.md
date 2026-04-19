@@ -68,6 +68,6 @@ func main() {
 
 ---
 
-References
+**References**
 
 - [wappalyzergo](https://github.com/projectdiscovery/wappalyzergo)

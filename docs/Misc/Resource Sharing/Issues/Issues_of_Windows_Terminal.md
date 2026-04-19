@@ -13,6 +13,6 @@ Update-Module -Name PSReadline # 更新
 
 ---
 
-References
+**References**
 
 - [Windows Terminal 文本出现纯色背景问题解决方法](https://www.gerenbiji.com/blog/2025%E5%B9%B4/Windows%20Terminal%20%E6%96%87%E6%9C%AC%E5%87%BA%E7%8E%B0%E7%BA%AF%E8%89%B2%E8%83%8C%E6%99%AF%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/)

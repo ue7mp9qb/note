@@ -65,7 +65,7 @@ Complete tasks
 
 ---
 
-References
+**References**
 
 - [GitBook](https://www.gitbook.com/)
 - [GitBook Documentation](https://docs.gitbook.com/)

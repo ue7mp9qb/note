@@ -20,7 +20,7 @@ Fast port scanner with a focus on reliability and simplicity.
 
 ---
 
-References
+**References**
 
 - [naabu](https://www.kali.org/tools/naabu/)
 

@@ -472,7 +472,7 @@ hello:expr/**/ession(alert(1))
 
 ---
 
-References
+**References**
 
 - [Cross-site scripting (XSS)](https://portswigger.net/web-security/cross-site-scripting)
 - [CWE-79](https://hackerone.com/hacktivity/cwe_discovery?id=cwe-79)

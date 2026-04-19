@@ -27,6 +27,6 @@ Most advanced XSS scanner.
 
 ---
 
-References
+**References**
 
 - [xsstrike](https://www.kali.org/tools/xsstrike/)

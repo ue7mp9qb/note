@@ -27,6 +27,6 @@ Install Reqable Proxy CA to Trusted Root Certification Authorities
 
 ---
 
-References
+**References**
 
 - [Reqable](https://reqable.com/en-US/)

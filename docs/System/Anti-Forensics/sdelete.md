@@ -22,6 +22,6 @@ sdelete -z C:
 
 ---
 
-References
+**References**
 
 - [SDelete](https://learn.microsoft.com/en-us/sysinternals/downloads/sdelete)

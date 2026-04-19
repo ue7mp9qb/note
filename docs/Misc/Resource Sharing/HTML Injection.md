@@ -105,7 +105,7 @@ Reflected 和 DOM 时常不收, 留意公告
 
 ---
 
-References
+**References**
 
 - [CWE-80](https://hackerone.com/hacktivity/cwe_discovery?id=cwe-80)
 - [HTML Injection in LinkedIn Premium Support Chat](https://hackerone.com/reports/3079966)

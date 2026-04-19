@@ -18,7 +18,7 @@ Next generation web scanner.
 
 ---
 
-References
+**References**
 
 - [whatweb](https://www.kali.org/tools/whatweb/)
 

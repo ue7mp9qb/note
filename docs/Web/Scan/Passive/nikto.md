@@ -34,7 +34,7 @@ Web server security scanner.
 
 ---
 
-References
+**References**
 
 - [nikto](https://www.kali.org/tools/nikto/)
 

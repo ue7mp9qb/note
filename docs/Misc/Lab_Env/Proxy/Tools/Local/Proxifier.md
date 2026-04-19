@@ -24,6 +24,6 @@ Proxifier allows network applications that do not support working through proxy 
 
 ---
 
-References
+**References**
 
 - [Proxifier](https://www.proxifier.com/)

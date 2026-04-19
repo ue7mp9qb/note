@@ -76,6 +76,6 @@ VeraCrypt is a free open source disk encryption software for Windows, Mac OSX an
 
 ---
 
-References
+**References**
 
 - [VeraCrypt](https://veracrypt.io/en/Home.html)

@@ -76,6 +76,6 @@ Login `msfadmin:msfadmin`
 
 ---
 
-References
+**References**
 
 - [metasploitable2](https://docs.rapid7.com/metasploit/metasploitable-2/)

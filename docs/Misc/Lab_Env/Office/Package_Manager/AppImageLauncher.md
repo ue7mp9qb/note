@@ -38,6 +38,6 @@ Helper application for Linux distributions serving as a kind of "entry point" fo
 
 ---
 
-References
+**References**
 
 - [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher)

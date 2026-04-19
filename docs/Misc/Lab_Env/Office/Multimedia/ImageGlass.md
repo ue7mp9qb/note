@@ -11,6 +11,6 @@ A lightweight, versatile image viewer.
 
 ---
 
-References
+**References**
 
 - [ImageGlass](https://imageglass.org/)

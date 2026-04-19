@@ -248,6 +248,6 @@ test6
 
 ---
 
-References
+**References**
 
-- [Vim](https://www.vim.org/)
+- [vim](https://www.vim.org/)

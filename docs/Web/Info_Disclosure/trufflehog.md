@@ -20,6 +20,6 @@ Searches through git repositories for secrets.
 
 ---
 
-References
+**References**
 
 - [trufflehog](https://www.kali.org/tools/trufflehog/)

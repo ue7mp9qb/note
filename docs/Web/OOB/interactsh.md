@@ -37,6 +37,6 @@ echo $! > ~/pid.log
 
 ---
 
-References
+**References**
 
 - [interactsh](https://github.com/projectdiscovery/interactsh)

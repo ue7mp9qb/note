@@ -285,7 +285,7 @@ PS C:\Windows\system32> Restart-Service sshd
 
 ---
 
-References
+**References**
 
 - [OpenSSH](https://www.openssh.com/)
 

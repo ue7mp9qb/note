@@ -18,7 +18,7 @@ Identify and fingerprint Web Application Firewall products.
 
 ---
 
-References
+**References**
 
 - [wafw00f](https://www.kali.org/tools/wafw00f/)
 
