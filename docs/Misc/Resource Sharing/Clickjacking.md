@@ -1,20 +1,30 @@
-通过 `<iframe>` 标签将目标网站隐藏到伪造的页面中, 当目标用户被诱导使用伪造网站进行操作时, 用户的操作将直接作用到目标网站.
+Clickjacking is an interface-based attack in which a user is tricked into clicking on actionable content on a hidden website by clicking on some other content in a decoy website. Consider the following example:
 
-## 1. PoC
+A web user accesses a decoy website (perhaps this is a link provided by an email) and clicks on a button to win a prize. Unknowingly, they have been deceived by an attacker into pressing an alternative hidden button and this results in the payment of an account on another site. This is an example of a clickjacking attack. The technique depends upon the incorporation of an invisible, actionable web page (or multiple pages) containing a button or hidden link, say, within an iframe. The iframe is overlaid on top of the user's anticipated decoy web page content. This attack differs from a [CSRF](https://portswigger.net/web-security/csrf) attack in that the user is required to perform an action such as a button click whereas a CSRF attack depends upon forging an entire request without the user's knowledge or input.
 
-1. 使用 [ClickjackPoc](https://github.com/Raiders0786/ClickjackPoc/tree/master) 批量检测可能存在 Clickjacking 的目标
+## 1. Principle
 
-## 2. Exploit
+可伪造网页诱导用户实现 CSRF
 
-1. 使用 [Burp Clickbandit](https://portswigger.net/burp/documentation/desktop/tools/clickbandit) 自动生成 PoC 检测目标
+### 1.1. Location
 
-   ![使用 Burp Clickbandit 自动生成 PoC 检测目标](./../../../images/Clickjacking/%E4%BD%BF%E7%94%A8%20Burp%20Clickbandit%20%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%20PoC%20%E6%A3%80%E6%B5%8B%E7%9B%AE%E6%A0%87.png)
+所有可被 iframe 标签引用的网站都可能存在漏洞
 
-2. 使用 [Testing for Clickjacking](https://github.com/OWASP/www-project-web-security-testing-guide/blob/master/v41/4-Web_Application_Security_Testing/11-Client_Side_Testing/09-Testing_for_Clickjacking.md) 尝试手动绕过
+```
+<iframe src="https://example.com"></iframe>
+```
+
+绕过
+
+```
+<iframe sandbox="allow-forms" src="https://example.com"></iframe>
+```
+
+
 
 ---
 
 **References**
 
-- [OWASP Clickjacking](https://owasp.org/www-community/attacks/Clickjacking)
-- [PortSwigger Clickjacking](https://portswigger.net/web-security/clickjacking)
+- [Clickjacking](https://portswigger.net/web-security/clickjacking)
+- [CWE-1021](https://hackerone.com/hacktivity/cwe_discovery?id=cwe-1021)

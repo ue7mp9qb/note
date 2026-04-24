@@ -4,8 +4,6 @@
 
 某些情况下上传处可能无法直接 DoS, 但是在 API 读取文件名时可能产生 DoS
 
----
-
 References
 
 - [profile-picture name parameter with large value lead to DoS for other users and programs on the platform](https://hackerone.com/reports/764434)
@@ -27,8 +25,6 @@ http://example.com/demo.php/?img=coca-cola.jpg
 http://example.com/demo.php/?img=coca-cola.jpg&width=100&height=100
 有时需要自己构造参数
 ```
-
----
 
 References
 
@@ -52,7 +48,7 @@ graph TD
 A-->B-->A-->B-->A-->B-->A-->B-->A-->B-->A-->B-->A-->B-->A-->B-->A-->B
 ```
 
----
+References
 
 - [Uncontrolled Resource Consumption in any Markdown field using Mermaid](https://hackerone.com/reports/670572)
 
@@ -85,7 +81,7 @@ A-->B-->A-->B-->A-->B-->A-->B-->A-->B-->A-->B-->A-->B-->A-->B-->A-->B
 
 ### 3. XML
 
-Word, Excel, PowerPoint 文件解压后存在 XML 文件, 压缩后可回复文档.
+Word, Excel, PowerPoint, SVG 文件解压后存在 XML 文件, 压缩后可回复文档.
 
 可利用 XML 的内部实体的循环引用造成 DoS
 
@@ -124,8 +120,6 @@ Word, Excel, PowerPoint 文件解压后存在 XML 文件, 压缩后可回复文�
    ```
 
 5. 保存后上传到在线文档解析则可能造成 DoS.
-
----
 
 References
 

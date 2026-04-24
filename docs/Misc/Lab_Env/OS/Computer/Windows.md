@@ -295,6 +295,7 @@ Shut down, Take Snapshot: `deploy`
 |           [Everything](https://www.voidtools.com/)           |
 |             [Geek](https://geekuninstaller.com/)             |
 |                 [Git](https://git-scm.com/)                  |
+|           [GlassWire](https://www.glasswire.com/)            |
 |       [Google Chrome](https://www.google.com/chrome/)        |
 |            [ImagesGlass](https://imageglass.org/)            |
 |             [Java](https://www.oracle.com/java/)             |

@@ -1,4 +1,4 @@
-Tool to identify hash types.
+Hashing tool supporting several hashes and recursivity.
 
 ## 1. Usage
 
