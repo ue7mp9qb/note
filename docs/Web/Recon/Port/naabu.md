@@ -15,7 +15,7 @@ Fast port scanner with a focus on reliability and simplicity.
 
 ```
 ┌──(root㉿kali)-[~]
-└─# naabu -Pn -host <host> -o ~/results.txt
+└─# naabu -Pn -host <HOST> -o ~/results.txt
 ```
 
 ---

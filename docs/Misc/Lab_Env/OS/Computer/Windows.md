@@ -320,6 +320,7 @@ Shut down, Take Snapshot: `deploy`
 |        [VLC media player](https://www.videolan.org/)         |
 |     [Visual Studio Code](https://code.visualstudio.com/)     |
 |   [WindowsTerminal](https://github.com/microsoft/terminal)   |
+|                 [Yakit](https://yaklang.io/)                 |
 
 ## 6. Usage
 

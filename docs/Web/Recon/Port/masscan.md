@@ -6,7 +6,7 @@ TCP port scanner.
 
 ```
 ┌──(root㉿kali)-[~]
-└─$ masscan -p- <host>
+└─$ masscan -p- <HOST>
 ```
 
 ---

@@ -40,7 +40,9 @@
 
 修改 HTTP 消息显示字体
 
-![](./../../../images/Burp_Suite/%E4%BF%AE%E6%94%B9%20HTTP%20%E6%B6%88%E6%81%AF%E6%98%BE%E7%A4%BA%E5%AD%97%E4%BD%93.png)
+![修改 HTTP 消息显示字体](./../../../images/Burp_Suite/%E4%BF%AE%E6%94%B9%20HTTP%20%E6%B6%88%E6%81%AF%E6%98%BE%E7%A4%BA%E5%AD%97%E4%BD%93.png)
+
+> 英文推荐 Consolas, 中文推荐 SimHei
 
 ### 2.1. Proxy
 
@@ -79,9 +81,19 @@ Refences
 
 - [Username enumeration via subtly different responses](https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-subtly-different-responses)
 
-### 2.3. Sessions
+## 2.3. Repeater
 
-### 2.3.1. Macros
+Repeater 中有三种 Group send options
+
+```
+Send group in sequence (single connection)    # 单线程逐个发送
+Send group in sequence (separate connections) # 多线程逐个发送
+Send group in parallel (single-packet attack) # 多线程同步发送
+```
+
+### 2.4. Sessions
+
+### 2.4.1. Macros
 
 用于从其它页面提取数据, 配置到 Sessions 后即可在所有会话中使用, 注意不要添加测试页面
 

