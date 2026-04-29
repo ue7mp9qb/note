@@ -242,7 +242,7 @@ VM needs to create a folder and add exclusions
 %UserProfile%\Apps
 ```
 
-PM needs to create a folder, configure [SMB](https://keithpeck177271.gitbook.io/notes/docs/misc/lab_env/office/file_sharing/pei-zhi-smb-wen-jian-gong-xiang) and install [VisualCppRedist AIO](https://github.com/abbodi1406/vcredist)
+PM needs to create a folder and install [VisualCppRedist AIO](https://github.com/abbodi1406/vcredist)
 
 ```
 %UserProfile%
