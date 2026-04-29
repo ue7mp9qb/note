@@ -20,8 +20,6 @@ A web user accesses a decoy website (perhaps this is a link provided by an email
 <iframe sandbox="allow-forms" src="https://example.com"></iframe>
 ```
 
-
-
 ---
 
 **References**
