@@ -10,80 +10,35 @@ To illustrate the overlap between API testing and general web testing, we've cre
 
 ### 1.1. Location
 
-任何存在接口的位置
+任何调用 API 的位置, 关注 JS 文件
 
 ## 2. Test
 
-### 2.1. API Documentation
+### 2.1. API 文档泄露
 
-API 文档泄露
+爆破 API 文档
 
-```
-GET /api/
-```
+> [H2-9000.txt](https://github.com/SexyBeast233/SecDictionary/blob/master/filelak/H2-9000.txt)
+>
+> [api-endpoints.txt ](https://github.com/danielmiessler/SecLists/blob/9da1d4931fc83e6999f09c5dae6802b2ad2ec7d0/Discovery/Web-Content/api/api-endpoints.txt)
 
-### 2.2. Parameter Pollution
+### 2.2. Bypass
 
-在忘记密码功能处找到一个 JS 文件, 发现可通过 Token 重置密码
+爆破请求方式
 
-```
-/forgot-password?reset_token=${resetToken}
-```
-
-忘记密码, 请求不存在的用户名, 报错 `"error":"Invalid username."` 
+隐藏参数绕过
 
 ```
-username=foo
+username=foo%26x=y # 使用 & 拼接
+username=foo%23    # 使用 # 截断
+username=foo%3f    # 使用 ? 查询
 ```
 
-请求存在的用户名并添加一个参数, 报错 `"error": "Parameter is not supported."` 
+目录穿越绕过
 
 ```
-username=administrator%26x=y
-```
-
-> 说明参数被解析
-
-使用 `#` 截断, 报错 `"error": "Field not specified."` 
-
-```
-username=administrator%23
-```
-
-> 说明缺少一个 `field` 参数
-
-收集忘记密码功能的参数, 猜测 `field` 的值
-
-```
-username=administrator%26field=§foo§%23
-```
-
-修改 `field` 的值获取 Token
-
-```
-username=administrator%26field=reset_token
-```
-
-拼接 Token 以重置密码
-
-```
-/forgot-password?reset_token=MY-TOKEN
-```
-
-### 2.3. Unused API Endpoint
-
-爆破请求方式发现可以通过隐藏参数修改商品价格
-
-```
-PATCH /api/products/1/price HTTP/2
-```
-
-### 2.4. Mass Assignment
-
-在一个响应包中找到了一个隐藏参数, 可获得折扣
-
-```
-"chosen_discount":{"percentage":100}
+username=./foo # 可能存在目录穿越
+username=../../../../api-docs%23 # 获取 API 文档
 ```
 
 ---

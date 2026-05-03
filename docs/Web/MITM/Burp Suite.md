@@ -18,15 +18,13 @@
 
 导入至 Trusted Root Certification Authorities
 
-在安装目录创建文件夹 `Extensions`
+下载 [jython-standalone.jar](https://central.sonatype.com/artifact/org.python/jython-standalone/versions) 到 `Burp Suite Extensions` 文件夹
 
 ```
-%UserProfile%\AppData\Local\Programs\BurpSuitePro\Extensions
+%UserProfile%\Documents\Github\configs\Burp Suite Extensions
 ```
 
 > 所有的扩展都要下载到这个目录中
-
-下载 [jython-standalone.jar](https://central.sonatype.com/artifact/org.python/jython-standalone/versions) 到 `Extensions` 文件夹
 
 启动 Burp Suite, 配置 Python 环境
 

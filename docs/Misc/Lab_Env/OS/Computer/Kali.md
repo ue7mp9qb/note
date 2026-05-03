@@ -278,12 +278,8 @@ Take Snapshot: `init`
 |              [python](https://www.python.org/)               |
 |                    [go](https://go.dev/)                     |
 |              [docker](https://www.docker.com/)               |
-|                [portmap](https://portmap.io/)                |
 |       [vulfocus](https://fofapro.github.io/vulfocus/)        |
-|          [naabu](https://www.kali.org/tools/naabu/)          |
-|  [httpx-toolkit](https://www.kali.org/tools/httpx-toolkit/)  |
-|     [katana](https://github.com/projectdiscovery/katana)     |
-|       [xsstrike](https://www.kali.org/tools/xsstrike/)       |
+|                [portmap](https://portmap.io/)                |
 
 Take Snapshot: `deploy` 
 
