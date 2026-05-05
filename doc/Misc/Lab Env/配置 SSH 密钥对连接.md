@@ -46,7 +46,7 @@ Mode                LastWriteTime         Length Name
 
 在 Debian 中启用 SSH Agent 集成
 
-![在 Debian 中启用 SSH Agent 集成](./../../../images/%E9%85%8D%E7%BD%AE_SSH_%E5%AF%86%E9%92%A5%E5%AF%B9%E8%BF%9E%E6%8E%A5/%E5%9C%A8%20Debian%20%E4%B8%AD%E5%90%AF%E7%94%A8%20SSH%20Agent%20%E9%9B%86%E6%88%90.png)
+![在 Debian 中启用 SSH Agent 集成](./../../../image/%E9%85%8D%E7%BD%AE%20SSH%20%E5%AF%86%E9%92%A5%E5%AF%B9%E8%BF%9E%E6%8E%A5/%E5%9C%A8%20Debian%20%E4%B8%AD%E5%90%AF%E7%94%A8%20SSH%20Agent%20%E9%9B%86%E6%88%90.png)
 
 ### 2.2. Windows
 
@@ -82,21 +82,21 @@ PS C:\Users\null> ssh-add -l
 
 在 Windows 中启用 SSH Agent 集成
 
-![在 Windows 中启用 SSH Agent 集成](./../../../images/%E9%85%8D%E7%BD%AE_SSH_%E5%AF%86%E9%92%A5%E5%AF%B9%E8%BF%9E%E6%8E%A5/%E5%9C%A8%20Windows%20%E4%B8%AD%E5%90%AF%E7%94%A8%20SSH%20Agent%20%E9%9B%86%E6%88%90.png)
+![在 Windows 中启用 SSH Agent 集成](./../../../image/%E9%85%8D%E7%BD%AE%20SSH%20%E5%AF%86%E9%92%A5%E5%AF%B9%E8%BF%9E%E6%8E%A5/%E5%9C%A8%20Windows%20%E4%B8%AD%E5%90%AF%E7%94%A8%20SSH%20Agent%20%E9%9B%86%E6%88%90.png)
 
 ## 3. 保存私钥到 KeePassXC
 
 新建条目, 设置条目密码为私钥密码
 
-![](./../../../images/%E9%85%8D%E7%BD%AE_SSH_%E5%AF%86%E9%92%A5%E5%AF%B9%E8%BF%9E%E6%8E%A5/%E6%96%B0%E5%BB%BA%E6%9D%A1%E7%9B%AE,%20%E8%AE%BE%E7%BD%AE%E6%9D%A1%E7%9B%AE%E5%AF%86%E7%A0%81%E4%B8%BA%E7%A7%81%E9%92%A5%E5%AF%86%E7%A0%81.png)
+![新建条目, 设置条目密码为私钥密码](./../../../image/%E9%85%8D%E7%BD%AE%20SSH%20%E5%AF%86%E9%92%A5%E5%AF%B9%E8%BF%9E%E6%8E%A5/%E6%96%B0%E5%BB%BA%E6%9D%A1%E7%9B%AE,%20%E8%AE%BE%E7%BD%AE%E6%9D%A1%E7%9B%AE%E5%AF%86%E7%A0%81%E4%B8%BA%E7%A7%81%E9%92%A5%E5%AF%86%E7%A0%81.png)
 
 添加私钥到附件
 
-![](./../../../images/%E9%85%8D%E7%BD%AE_SSH_%E5%AF%86%E9%92%A5%E5%AF%B9%E8%BF%9E%E6%8E%A5/%E6%B7%BB%E5%8A%A0%E7%A7%81%E9%92%A5%E5%88%B0%E9%99%84%E4%BB%B6.png)
+![添加私钥到附件](./../../../image/%E9%85%8D%E7%BD%AE%20SSH%20%E5%AF%86%E9%92%A5%E5%AF%B9%E8%BF%9E%E6%8E%A5/%E6%B7%BB%E5%8A%A0%E7%A7%81%E9%92%A5%E5%88%B0%E9%99%84%E4%BB%B6.png)
 
 从附件添加私钥到 SSH Agent
 
-![](./../../../images/%E9%85%8D%E7%BD%AE_SSH_%E5%AF%86%E9%92%A5%E5%AF%B9%E8%BF%9E%E6%8E%A5/%E4%BB%8E%E9%99%84%E4%BB%B6%E6%B7%BB%E5%8A%A0%E7%A7%81%E9%92%A5%E5%88%B0%20SSH%20Agent.png)
+![从附件添加私钥到 SSH Agent](./../../../image/%E9%85%8D%E7%BD%AE%20SSH%20%E5%AF%86%E9%92%A5%E5%AF%B9%E8%BF%9E%E6%8E%A5/%E4%BB%8E%E9%99%84%E4%BB%B6%E6%B7%BB%E5%8A%A0%E7%A7%81%E9%92%A5%E5%88%B0%20SSH%20Agent.png)
 
 ## 4. 部署公钥到服务器
 
@@ -113,7 +113,7 @@ null@debain:~$ mkdir -p -m 700 ~/.ssh \
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAhONuGnP2jmIemHuiaiNeMnSzn+RHzG9mNitLZcqUEc test@DESKTOP-0EN5L6
 ```
 
-![将公钥写入文件](./../../../images/%E9%85%8D%E7%BD%AE_SSH_%E5%AF%86%E9%92%A5%E5%AF%B9%E8%BF%9E%E6%8E%A5/%E5%B0%86%E5%85%AC%E9%92%A5%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6.png)
+![将公钥写入文件](./../../../image/%E9%85%8D%E7%BD%AE%20SSH%20%E5%AF%86%E9%92%A5%E5%AF%B9%E8%BF%9E%E6%8E%A5/%E5%B0%86%E5%85%AC%E9%92%A5%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6.png)
 
 ## 5. 允许普通用户以密钥对登录
 

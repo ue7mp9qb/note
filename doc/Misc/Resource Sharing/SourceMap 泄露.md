@@ -2,7 +2,7 @@ SourceMap 中存储了大量 JS 文件的索引, 可用于下载网站的 JS 文
 
 sourceMappingURL 一般会在 JS 文件中
 
-![](./../../../images/SourceMap_%E6%B3%84%E9%9C%B2/sourceMappingURL%20%E4%B8%80%E8%88%AC%E4%BC%9A%E5%9C%A8%20JS%20%E6%96%87%E4%BB%B6%E4%B8%AD.png)
+![sourceMappingURL 一般会在 JS 文件中](./../../../image/SourceMap%20%E6%B3%84%E9%9C%B2/sourceMappingURL%20%E4%B8%80%E8%88%AC%E4%BC%9A%E5%9C%A8%20JS%20%E6%96%87%E4%BB%B6%E4%B8%AD.png)
 
 安装 [Tampermonkey](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en-US&utm_source=ext_sidebar) 脚本 [sourcemap-searcher](https://greasyfork.org/zh-CN/scripts/447335-sourcemap-searcher) 后在控制台执行 `sms()` 检测 sourceMappingURL
 

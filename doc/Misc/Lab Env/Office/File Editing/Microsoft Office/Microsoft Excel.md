@@ -4,7 +4,7 @@
 
 分列
 
-![](./../../../../../../images/Microsoft_Excel/%E5%88%86%E5%88%97.png)
+![分列](./../../../../../../image/Microsoft%20Excel/%E5%88%86%E5%88%97.png)
 
 ---
 

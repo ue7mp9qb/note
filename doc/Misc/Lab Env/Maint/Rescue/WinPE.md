@@ -16,13 +16,13 @@ Windows PE (WinPE) is a small operating system used to install, deploy, and repa
 C:\Program Files (x86)\Windows Kits\10\
 ```
 
-![安装 ADK 到默认路径](./../../../../../images/WinPE/%E5%AE%89%E8%A3%85%20ADK%20%E5%88%B0%E9%BB%98%E8%AE%A4%E8%B7%AF%E5%BE%84.png)
+![安装 ADK 到默认路径](./../../../../../image/WinPE/%E5%AE%89%E8%A3%85%20ADK%20%E5%88%B0%E9%BB%98%E8%AE%A4%E8%B7%AF%E5%BE%84.png)
 
 选择默认安装
 
 安装 WinPE 插件到默认路径
 
-![安装 WinPE 插件到默认路径](./../../../../../images/WinPE/%E5%AE%89%E8%A3%85%20WinPE%20%E6%8F%92%E4%BB%B6%E5%88%B0%E9%BB%98%E8%AE%A4%E8%B7%AF%E5%BE%84.png)
+![安装 WinPE 插件到默认路径](./../../../../../image/WinPE/%E5%AE%89%E8%A3%85%20WinPE%20%E6%8F%92%E4%BB%B6%E5%88%B0%E9%BB%98%E8%AE%A4%E8%B7%AF%E5%BE%84.png)
 
 选择默认安装
 

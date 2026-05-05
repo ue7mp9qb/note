@@ -1,18 +1,18 @@
 ## [泛微](https://www.weaver.com.cn/)
 
-![Weaver](./../../../../../images/Fingerprint/Service/Weaver.png)
+![Weaver](./../../../../../image/Fingerprint/Service/Weaver.png)
 
 ## [蓝凌](https://www.landray.com.cn/)
 
-![Landray](./../../../../../images/Fingerprint/Service/Landray.png)
+![Landray](./../../../../../image/Fingerprint/Service/Landray.png)
 
 ## [Spring](https://spring.io/)
 
-![Spring](./../../../../../images/Fingerprint/Service/Spring.png)
+![Spring](./../../../../../image/Fingerprint/Service/Spring.png)
 
 ## [ThinkPHP](https://www.thinkphp.cn/)
 
-![ThinkPHP](./../../../../../images/Fingerprint/Service/ThinkPHP.png)
+![ThinkPHP](./../../../../../image/Fingerprint/Service/ThinkPHP.png)
 
 ## struts2
 
@@ -36,7 +36,7 @@ root@kali:~# wpscan --url http://wordpress.local --enumerate p
 
 ## [Discuz](http://www.discuz.vip/)
 
-![Discuz](./../../../../../images/Fingerprint/Service/Discuz.png)
+![Discuz](./../../../../../image/Fingerprint/Service/Discuz.png)
 
 ```
 Discuz

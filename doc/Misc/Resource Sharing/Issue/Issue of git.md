@@ -6,7 +6,7 @@
 
 将公钥部署到 git 服务器后，使用 ssh 进行 git 操作会出现以下错误
 
-![](./../../../../images/Issues_of_git/%E5%B0%86%E5%85%AC%E9%92%A5%E9%83%A8%E7%BD%B2%E5%88%B0%20git%20%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%90%8E%EF%BC%8C%E4%BD%BF%E7%94%A8%20ssh%20%E8%BF%9B%E8%A1%8C%20git%20%E6%93%8D%E4%BD%9C%E4%BC%9A%E5%87%BA%E7%8E%B0%E4%BB%A5%E4%B8%8B%E9%94%99%E8%AF%AF.png)
+![将公钥部署到 git 服务器后，使用 ssh 进行 git 操作会出现以下错误](./../../../../image/Issue%20of%20git/%E5%B0%86%E5%85%AC%E9%92%A5%E9%83%A8%E7%BD%B2%E5%88%B0%20git%20%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%90%8E%EF%BC%8C%E4%BD%BF%E7%94%A8%20ssh%20%E8%BF%9B%E8%A1%8C%20git%20%E6%93%8D%E4%BD%9C%E4%BC%9A%E5%87%BA%E7%8E%B0%E4%BB%A5%E4%B8%8B%E9%94%99%E8%AF%AF.png)
 
 这是由于配置时使用的是 PowerShell 的 ssh 服务，而 git 时使用的是自带的 ssh 服务
 

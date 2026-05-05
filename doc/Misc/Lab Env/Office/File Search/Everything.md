@@ -2,19 +2,19 @@
 
 General
 
-![General](./../../../../../images/Everything/General.png)
+![General](./../../../../../image/Everything/General.png)
 
 UI
 
-![UI](./../../../../../images/Everything/UI.png)
+![UI](./../../../../../image/Everything/UI.png)
 
 Results
 
-![Results](./../../../../../images/Everything/Results.png)
+![Results](./../../../../../image/Everything/Results.png)
 
 View
 
-![View](./../../../../../images/Everything/View.png)
+![View](./../../../../../image/Everything/View.png)
 
 ---
 

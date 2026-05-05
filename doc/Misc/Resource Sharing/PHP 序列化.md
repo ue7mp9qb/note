@@ -262,7 +262,7 @@ $xuegod = unserialize($ser);
 
 > payload 注入成功
 
-![](./../../../images/PHP_%E5%BA%8F%E5%88%97%E5%8C%96/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%AE%BF%E9%97%AE%EF%BC%8C%E6%89%A7%E8%A1%8C%20payload.png)
+![浏览器访问，执行 payload](./../../../image/PHP%20%E5%BA%8F%E5%88%97%E5%8C%96/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%AE%BF%E9%97%AE%EF%BC%8C%E6%89%A7%E8%A1%8C%20payload.png)
 
 ## 3 反序列化漏洞实例-ctf
 
@@ -424,13 +424,13 @@ unserialize($s);
 
 添加完后刷新一下页面，会出现页面错误
 
-![](./../../../images/PHP_%E5%BA%8F%E5%88%97%E5%8C%96/%E6%B7%BB%E5%8A%A0%E5%AE%8C%E5%90%8E%E5%88%B7%E6%96%B0%E4%B8%80%E4%B8%8B%E9%A1%B5%E9%9D%A2%EF%BC%8C%E4%BC%9A%E5%87%BA%E7%8E%B0%E9%A1%B5%E9%9D%A2%E9%94%99%E8%AF%AF.png)
+![添加完后刷新一下页面，会出现页面错误](./../../../image/PHP%20%E5%BA%8F%E5%88%97%E5%8C%96/%E6%B7%BB%E5%8A%A0%E5%AE%8C%E5%90%8E%E5%88%B7%E6%96%B0%E4%B8%80%E4%B8%8B%E9%A1%B5%E9%9D%A2%EF%BC%8C%E4%BC%9A%E5%87%BA%E7%8E%B0%E9%A1%B5%E9%9D%A2%E9%94%99%E8%AF%AF.png)
 
 > 由于添加了一个接收参数的代码，而目前并没有传递这个参数，因此报错
 
 在任意路径创建一个文件（不需要是站点目录）
 
-![](./../../../images/PHP_%E5%BA%8F%E5%88%97%E5%8C%96/%E5%9C%A8%E4%BB%BB%E6%84%8F%E8%B7%AF%E5%BE%84%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%EF%BC%88%E4%B8%8D%E9%9C%80%E8%A6%81%E6%98%AF%E7%AB%99%E7%82%B9%E7%9B%AE%E5%BD%95%EF%BC%89.png)
+![在任意路径创建一个文件（不需要是站点目录）](./../../../image/PHP%20%E5%BA%8F%E5%88%97%E5%8C%96/%E5%9C%A8%E4%BB%BB%E6%84%8F%E8%B7%AF%E5%BE%84%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%EF%BC%88%E4%B8%8D%E9%9C%80%E8%A6%81%E6%98%AF%E7%AB%99%E7%82%B9%E7%9B%AE%E5%BD%95%EF%BC%89.png)
 
 > 此文件就是要删除的目标文件
 
@@ -492,17 +492,17 @@ private function removeFiles()
 
 在 Seay 源代码审计系统打开站点根目录
 
-![](./../../../images/PHP_%E5%BA%8F%E5%88%97%E5%8C%96/%E5%9C%A8%20Seay%20%E6%BA%90%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E7%B3%BB%E7%BB%9F%E6%89%93%E5%BC%80%E7%AB%99%E7%82%B9%E6%A0%B9%E7%9B%AE%E5%BD%95.png)
+![在 Seay 源代码审计系统打开站点根目录](./../../../image/PHP%20%E5%BA%8F%E5%88%97%E5%8C%96/%E5%9C%A8%20Seay%20%E6%BA%90%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E7%B3%BB%E7%BB%9F%E6%89%93%E5%BC%80%E7%AB%99%E7%82%B9%E6%A0%B9%E7%9B%AE%E5%BD%95.png)
 
 在全局搜索搜索 `removeFiles()`
 
-![](./../../../images/PHP_%E5%BA%8F%E5%88%97%E5%8C%96/%E5%9C%A8%E5%85%A8%E5%B1%80%E6%90%9C%E7%B4%A2%E6%90%9C%E7%B4%A2%20removeFiles().png)
+![在全局搜索搜索 removeFiles()](./../../../image/PHP%20%E5%BA%8F%E5%88%97%E5%8C%96/%E5%9C%A8%E5%85%A8%E5%B1%80%E6%90%9C%E7%B4%A2%E6%90%9C%E7%B4%A2%20removeFiles().png)
 
 >选择 Windows 中的 `$this->files` 
 
 双击左侧函数，切换至函数所在位置
 
-![](./../../../images/PHP_%E5%BA%8F%E5%88%97%E5%8C%96/%E5%8F%8C%E5%87%BB%E5%B7%A6%E4%BE%A7%E5%87%BD%E6%95%B0%EF%BC%8C%E5%88%87%E6%8D%A2%E8%87%B3%E5%87%BD%E6%95%B0%E6%89%80%E5%9C%A8%E4%BD%8D%E7%BD%AE.png)
+![双击左侧函数，切换至函数所在位置](./../../../image/PHP%20%E5%BA%8F%E5%88%97%E5%8C%96/%E5%8F%8C%E5%87%BB%E5%B7%A6%E4%BE%A7%E5%87%BD%E6%95%B0%EF%BC%8C%E5%88%87%E6%8D%A2%E8%87%B3%E5%87%BD%E6%95%B0%E6%89%80%E5%9C%A8%E4%BD%8D%E7%BD%AE.png)
 
 查看 `removeFiles()` 的定义
 
@@ -530,7 +530,7 @@ private function removeFiles()
 
 复制变量 `$files` 所在的类
 
-![](./../../../images/PHP_%E5%BA%8F%E5%88%97%E5%8C%96/%E5%A4%8D%E5%88%B6%E5%8F%98%E9%87%8F%20$files%20%E6%89%80%E5%9C%A8%E7%9A%84%E7%B1%BB.png)
+![复制变量 $files 所在的类](./../../../image/PHP%20%E5%BA%8F%E5%88%97%E5%8C%96/%E5%A4%8D%E5%88%B6%E5%8F%98%E9%87%8F%20$files%20%E6%89%80%E5%9C%A8%E7%9A%84%E7%B1%BB.png)
 
 删除无用的代码
 
@@ -611,7 +611,7 @@ key=TzoyNzoidGhpbmtccHJvY2Vzc1xwaXBlc1xXaW5kb3dzIjoxOntzOjM0OiIAdGhpbmtccHJvY2Vz
 
 利用链
 
-![](./../../../images/PHP_%E5%BA%8F%E5%88%97%E5%8C%96/%E5%88%A9%E7%94%A8%E9%93%BE.png)
+![利用链](./../../../image/PHP%20%E5%BA%8F%E5%88%97%E5%8C%96/%E5%88%A9%E7%94%A8%E9%93%BE.png)
 
 ### 4.2 任意代码执行
 

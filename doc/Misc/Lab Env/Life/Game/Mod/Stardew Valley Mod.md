@@ -16,7 +16,7 @@
    "C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\StardewModdingAPI.exe" %command%
    ```
    
-   ![](./../../../../../../images/Stardew_Valley_Mod/%E4%BF%AE%E6%94%B9%E5%90%AF%E5%8A%A8%E9%A1%B9.png)
+   ![修改启动项](./../../../../../../image/Stardew%20Valley%20Mod/%E4%BF%AE%E6%94%B9%E5%90%AF%E5%8A%A8%E9%A1%B9.png)
    
    将需要安装的模块解压到以下路径即可
    

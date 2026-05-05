@@ -4,27 +4,27 @@ A minimal Markdown editor and reader.
 
 Files
 
-![Files](./../../../../../images/Typora/Files.png)
+![Files](./../../../../../image/Typora/Files.png)
 
 Editor
 
-![Editor](./../../../../../images/Typora/Editor.png)
+![Editor](./../../../../../image/Typora/Editor.png)
 
 Image
 
-![Image](./../../../../../images/Typora/Image.png)
+![Image](./../../../../../image/Typora/Image.png)
 
 Markdown
 
-![Markdown](./../../../../../images/Typora/Markdown.png)
+![Markdown](./../../../../../image/Typora/Markdown.png)
 
 Appearance
 
-![Appearance](./../../../../../images/Typora/Appearance.png)
+![Appearance](./../../../../../image/Typora/Appearance.png)
 
 General
 
-![General](./../../../../../images/Typora/General.png)
+![General](./../../../../../image/Typora/General.png)
 
 ---
 

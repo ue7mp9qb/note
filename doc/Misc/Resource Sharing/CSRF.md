@@ -4,11 +4,11 @@
 
 攻击者在 Burp Suite 拦截自己账户的敏感操作数据包，生成 PoC
 
-![攻击者在 Burp Suite 拦截自己账户的敏感操作数据包，生成 PoC](./../../../images/CSRF/%E6%94%BB%E5%87%BB%E8%80%85%E5%9C%A8%20Burp%20Suite%20%E6%8B%A6%E6%88%AA%E8%87%AA%E5%B7%B1%E8%B4%A6%E6%88%B7%E7%9A%84%E6%95%8F%E6%84%9F%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%8C%85%EF%BC%8C%E7%94%9F%E6%88%90%20PoC.png)
+![攻击者在 Burp Suite 拦截自己账户的敏感操作数据包，生成 PoC](./../../../image/CSRF/%E6%94%BB%E5%87%BB%E8%80%85%E5%9C%A8%20Burp%20Suite%20%E6%8B%A6%E6%88%AA%E8%87%AA%E5%B7%B1%E8%B4%A6%E6%88%B7%E7%9A%84%E6%95%8F%E6%84%9F%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%8C%85%EF%BC%8C%E7%94%9F%E6%88%90%20PoC.png)
 
 保存到 HTML 文件
 
-![保存到 HTML 文件](./../../../images/CSRF/%E4%BF%9D%E5%AD%98%E5%88%B0%20HTML%20%E6%96%87%E4%BB%B6.png)
+![保存到 HTML 文件](./../../../image/CSRF/%E4%BF%9D%E5%AD%98%E5%88%B0%20HTML%20%E6%96%87%E4%BB%B6.png)
 
 当目标在登录状态下点击这个 HTML 文件，就会执行敏感操作
 

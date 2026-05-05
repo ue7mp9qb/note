@@ -4,31 +4,31 @@
 
 ### 1.1. 403
 
-![403](./../../../../../images/Fingerprint/WAF/%E8%85%BE%E8%AE%AF%E4%BA%91/403.png)
+![403](./../../../../../image/Fingerprint/WAF/%E8%85%BE%E8%AE%AF%E4%BA%91/403.png)
 
 ### 1.2. 502
 
-![502](./../../../../../images/Fingerprint/WAF/%E8%85%BE%E8%AE%AF%E4%BA%91/502.png)
+![502](./../../../../../image/Fingerprint/WAF/%E8%85%BE%E8%AE%AF%E4%BA%91/502.png)
 
 ### 1.3. 505
 
-![505](./../../../../../images/Fingerprint/WAF/%E8%85%BE%E8%AE%AF%E4%BA%91/505.png)
+![505](./../../../../../image/Fingerprint/WAF/%E8%85%BE%E8%AE%AF%E4%BA%91/505.png)
 
 ## 2. 阿里云
 
 ## 2.1. 405
 
-![405](./../../../../../images/Fingerprint/WAF/%E9%98%BF%E9%87%8C%E4%BA%91/405.png)
+![405](./../../../../../image/Fingerprint/WAF/%E9%98%BF%E9%87%8C%E4%BA%91/405.png)
 
 ## 3. 华为云
 
 ### 3.1. 400
 
-![400](./../../../../../images/Fingerprint/WAF/%E5%8D%8E%E4%B8%BA%E4%BA%91/400.png)
+![400](./../../../../../image/Fingerprint/WAF/%E5%8D%8E%E4%B8%BA%E4%BA%91/400.png)
 
 ### 3.2. 418
 
-![418](./../../../../../images/Fingerprint/WAF/%E5%8D%8E%E4%B8%BA%E4%BA%91/418.png)
+![418](./../../../../../image/Fingerprint/WAF/%E5%8D%8E%E4%B8%BA%E4%BA%91/418.png)
 
 ---
 

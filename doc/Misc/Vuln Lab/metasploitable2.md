@@ -10,7 +10,7 @@ A test environment provides a secure place to perform penetration testing and se
 
 使用 VMware Workstation Pro 打开虚拟机
 
-![](./../../../images/metasploitable2/%E4%BD%BF%E7%94%A8%20VMware%20Workstation%20Pro%20%E6%89%93%E5%BC%80%E8%99%9A%E6%8B%9F%E6%9C%BA.png)
+![使用 VMware Workstation Pro 打开虚拟机](./../../../image/metasploitable2/%E4%BD%BF%E7%94%A8%20VMware%20Workstation%20Pro%20%E6%89%93%E5%BC%80%E8%99%9A%E6%8B%9F%E6%9C%BA.png)
 
 导出为 OVA
 
@@ -18,7 +18,7 @@ A test environment provides a secure place to perform penetration testing and se
 ubuntu_0804_temp.ova
 ```
 
-![](./../../../images/metasploitable2/%E5%AF%BC%E5%87%BA%E4%B8%BA%20OVA.png)
+![导出为 OVA](./../../../image/metasploitable2/%E5%AF%BC%E5%87%BA%E4%B8%BA%20OVA.png)
 
 Import
 
@@ -26,15 +26,15 @@ Import
 ubuntu_0804_temp
 ```
 
-![](./../../../images/metasploitable2/Import.png)
+![Import](./../../../image/metasploitable2/Import.png)
 
 Host-only
 
-![](./../../../images/metasploitable2/Host-only.png)
+![Host-only](./../../../image/metasploitable2/Host-only.png)
 
 Start
 
-![](./../../../images/metasploitable2/Start.png)
+![Start](./../../../image/metasploitable2/Start.png)
 
 Login
 
@@ -54,13 +54,13 @@ Export
 ubuntu_0804.ova
 ```
 
-![](./../../../images/metasploitable2/Export.png)
+![Export](./../../../image/metasploitable2/Export.png)
 
 Remove
 
 > Delete the virtual machine files and virtual hard disks
 
-![](./../../../images/metasploitable2/Remove.png)
+![Remove](./../../../image/metasploitable2/Remove.png)
 
 ## 3. Deploy
 

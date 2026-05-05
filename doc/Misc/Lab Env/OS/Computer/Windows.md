@@ -489,7 +489,7 @@ The command completed successfully.
 
 ### 6.7. 文件权限
 
-![文件权限](./../../../../../images/Windows/Usage/%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90.png)
+![文件权限](./../../../../../image/Windows/Usage/%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90.png)
 
 ### 6.8. 查看进程
 
@@ -507,7 +507,7 @@ C:\Users\Administrator> wmic os get osarchitecture
 
 添加环境变量
 
-![添加环境变量](./../../../../../images/Windows/Usage/%E6%B7%BB%E5%8A%A0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png)
+![添加环境变量](./../../../../../image/Windows/Usage/%E6%B7%BB%E5%8A%A0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png)
 
 > 添加多个变量时使用 `;` 间隔
 >
@@ -524,7 +524,7 @@ PS C:\Users\null> dir C:\Windows\Temp
 
 ### 6.12. 添加快捷访问
 
-![添加快捷访问](./../../../../../images/Windows/Usage/%E6%B7%BB%E5%8A%A0%E5%BF%AB%E6%8D%B7%E8%AE%BF%E9%97%AE.png)
+![添加快捷访问](./../../../../../image/Windows/Usage/%E6%B7%BB%E5%8A%A0%E5%BF%AB%E6%8D%B7%E8%AE%BF%E9%97%AE.png)
 
 ### 6.13. 查看网络
 
@@ -578,7 +578,7 @@ PS C:\Users\null> wslconfig /l
 
 关闭虚拟机平台
 
-![关闭虚拟机平台](./../../../../../images/Windows/Usage/%E5%85%B3%E9%97%AD%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%B9%B3%E5%8F%B0.png)
+![关闭虚拟机平台](./../../../../../image/Windows/Usage/%E5%85%B3%E9%97%AD%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%B9%B3%E5%8F%B0.png)
 
 ### 6.17. 删除
 
@@ -598,15 +598,15 @@ Remove-Item "C:\path\to\directory" -Recurse
 
 双击证书文件安装
 
-![双击证书文件安装](./../../../../../images/Windows/Usage/%E5%8F%8C%E5%87%BB%E8%AF%81%E4%B9%A6%E6%96%87%E4%BB%B6%E5%AE%89%E8%A3%85.png)
+![双击证书文件安装](./../../../../../image/Windows/Usage/%E5%8F%8C%E5%87%BB%E8%AF%81%E4%B9%A6%E6%96%87%E4%BB%B6%E5%AE%89%E8%A3%85.png)
 
 选择安装到当前用户
 
-![选择安装到当前用户](./../../../../../images/Windows/Usage/%E9%80%89%E6%8B%A9%E5%AE%89%E8%A3%85%E5%88%B0%E5%BD%93%E5%89%8D%E7%94%A8%E6%88%B7.png)
+![选择安装到当前用户](./../../../../../image/Windows/Usage/%E9%80%89%E6%8B%A9%E5%AE%89%E8%A3%85%E5%88%B0%E5%BD%93%E5%89%8D%E7%94%A8%E6%88%B7.png)
 
 选择存储到受信任的根证书颁发机构
 
-![选择存储到受信任的根证书颁发机构](./../../../../../images/Windows/Usage/%E9%80%89%E6%8B%A9%E5%AD%98%E5%82%A8%E5%88%B0%E5%8F%97%E4%BF%A1%E4%BB%BB%E7%9A%84%E6%A0%B9%E8%AF%81%E4%B9%A6%E9%A2%81%E5%8F%91%E6%9C%BA%E6%9E%84.png)
+![选择存储到受信任的根证书颁发机构](./../../../../../image/Windows/Usage/%E9%80%89%E6%8B%A9%E5%AD%98%E5%82%A8%E5%88%B0%E5%8F%97%E4%BF%A1%E4%BB%BB%E7%9A%84%E6%A0%B9%E8%AF%81%E4%B9%A6%E9%A2%81%E5%8F%91%E6%9C%BA%E6%9E%84.png)
 
 ### 6.19. SSH 连接记录
 
@@ -644,7 +644,7 @@ PS C:\Users\null> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Curre
 Settings\About\Advanced system settings\System Protection
 ```
 
-![启用系统保护](./../../../../../images/Windows/Usage/%E5%90%AF%E7%94%A8%E7%B3%BB%E7%BB%9F%E4%BF%9D%E6%8A%A4.png)
+![启用系统保护](./../../../../../image/Windows/Usage/%E5%90%AF%E7%94%A8%E7%B3%BB%E7%BB%9F%E4%BF%9D%E6%8A%A4.png)
 
 关闭远程协助
 
@@ -652,19 +652,19 @@ Settings\About\Advanced system settings\System Protection
 Settings\About\Advanced system settings\Remote
 ```
 
-![关闭远程协助](./../../../../../images/Windows/Usage/%E5%85%B3%E9%97%AD%E8%BF%9C%E7%A8%8B%E5%8D%8F%E5%8A%A9.png)
+![关闭远程协助](./../../../../../image/Windows/Usage/%E5%85%B3%E9%97%AD%E8%BF%9C%E7%A8%8B%E5%8D%8F%E5%8A%A9.png)
 
 ### 6.22. Search icon
 
 调整为显示搜索图标
 
-![调整为显示搜索图标](./../../../../../images/Windows/Usage/%E8%B0%83%E6%95%B4%E4%B8%BA%E6%98%BE%E7%A4%BA%E6%90%9C%E7%B4%A2%E5%9B%BE%E6%A0%87.png)
+![调整为显示搜索图标](./../../../../../image/Windows/Usage/%E8%B0%83%E6%95%B4%E4%B8%BA%E6%98%BE%E7%A4%BA%E6%90%9C%E7%B4%A2%E5%9B%BE%E6%A0%87.png)
 
 ### 6.23. Folder Option
 
 显示文件扩展名并配置资源管理器
 
-![显示文件扩展名并配置资源管理器](./../../../../../images/Windows/Usage/%E6%98%BE%E7%A4%BA%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D%E5%B9%B6%E9%85%8D%E7%BD%AE%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8.png)
+![显示文件扩展名并配置资源管理器](./../../../../../image/Windows/Usage/%E6%98%BE%E7%A4%BA%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D%E5%B9%B6%E9%85%8D%E7%BD%AE%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8.png)
 
 ### 6.24. Local Computer Policy
 
@@ -676,15 +676,15 @@ Run `gpedit.msc`
 Local Computer Policy\Computer Configuration\Administrative Templates\Control Panel\Personalization\Do not display the lock screen > Enabled
 ```
 
-![不显示锁屏](./../../../../../images/Windows/Usage/%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%94%81%E5%B1%8F.png)
+![不显示锁屏](./../../../../../image/Windows/Usage/%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%94%81%E5%B1%8F.png)
 
 在下载和安装任何更新之前通知
 
 ```
-Local Computer Policy\Computer Configuration\Administrative Templates\Windows Components\Windows Update\Configure Automatic Updates
+Local Computer Policy\Computer Configuration\Administrative Templates\Windows Components\Windows Update\Configure Automatic Updates > 2 - Notify for download and auto install
 ```
 
-![在下载和安装任何更新之前通知](./../../../../../images/Windows/Usage/%E5%9C%A8%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AE%89%E8%A3%85%E4%BB%BB%E4%BD%95%E6%9B%B4%E6%96%B0%E4%B9%8B%E5%89%8D%E9%80%9A%E7%9F%A5.png)
+![在下载和安装任何更新之前通知](./../../../../../image/Windows/Usage/%E5%9C%A8%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AE%89%E8%A3%85%E4%BB%BB%E4%BD%95%E6%9B%B4%E6%96%B0%E4%B9%8B%E5%89%8D%E9%80%9A%E7%9F%A5.png)
 
 ### 6.25. Power Options
 

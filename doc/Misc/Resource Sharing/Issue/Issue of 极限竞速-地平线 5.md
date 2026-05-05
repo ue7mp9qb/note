@@ -2,4 +2,4 @@
 
 可在退出游戏后在凭据管理器中将所有以 `Xbl|` 开头的 Windows 凭据删除，重启后即可正常登录
 
-![](./../../../../images/Issues_of_%E6%9E%81%E9%99%90%E7%AB%9E%E9%80%9F-%E5%9C%B0%E5%B9%B3%E7%BA%BF%205/%E5%88%A0%E9%99%A4%20Windows%20%E5%87%AD%E6%8D%AE.png)
+![删除 Windows 凭据](./../../../../image/Issue%20of%20%E6%9E%81%E9%99%90%E7%AB%9E%E9%80%9F-%E5%9C%B0%E5%B9%B3%E7%BA%BF%205/%E5%88%A0%E9%99%A4%20Windows%20%E5%87%AD%E6%8D%AE.png)

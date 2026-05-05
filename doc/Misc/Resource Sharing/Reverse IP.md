@@ -17,7 +17,7 @@ Common Name (CN)
 Subject Alternative Name (SAN)
 ```
 
-![](./../../../images/Reverse_IP/Certificate%20%E5%8F%8D%E6%9F%A5.png)
+![Certificate 反查](./../../../image/Reverse%20IP/Certificate%20%E5%8F%8D%E6%9F%A5.png)
 
 HUNTER
 

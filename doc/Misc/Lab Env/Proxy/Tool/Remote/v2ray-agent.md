@@ -1,6 +1,6 @@
 搭建高匿代理
 
-![搭建高匿代理](./../../../../../../images/v2ray-agent/%E6%90%AD%E5%BB%BA%E9%AB%98%E5%8C%BF%E4%BB%A3%E7%90%86.svg)
+![搭建高匿代理](./../../../../../../image/v2ray-agent/%E6%90%AD%E5%BB%BA%E9%AB%98%E5%8C%BF%E4%BB%A3%E7%90%86.svg)
 
 1. VLESS 建立服务端和客户端的通信.
 2. Reality 伪装 VLESS 流量, 使其看起来像是常见的 HTTPS 流量.

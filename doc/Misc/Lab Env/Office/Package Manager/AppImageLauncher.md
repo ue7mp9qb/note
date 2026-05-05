@@ -27,14 +27,14 @@ Helper application for Linux distributions serving as a kind of "entry point" fo
 /home/nemo/.local/Applications
 ```
 
-![](../../../../../images/AppImageLauncher/修改默认存储位置.png)
+![修改默认存储位置](./../../../../../image/AppImageLauncher/%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E5%AD%98%E5%82%A8%E4%BD%8D%E7%BD%AE.png)
 
 
 ## 3. Usage
 
 双击运行 app.AppImage 将应用集成到系统菜单中
 
-![](../../../../../images/AppImageLauncher/双击运行%20app.AppImage%20将应用集成到系统菜单中.png)
+![双击运行 app.AppImage 将应用集成到系统菜单中](./../../../../../image/AppImageLauncher/%E5%8F%8C%E5%87%BB%E8%BF%90%E8%A1%8C%20app.AppImage%20%E5%B0%86%E5%BA%94%E7%94%A8%E9%9B%86%E6%88%90%E5%88%B0%E7%B3%BB%E7%BB%9F%E8%8F%9C%E5%8D%95%E4%B8%AD.png)
 
 ---
 

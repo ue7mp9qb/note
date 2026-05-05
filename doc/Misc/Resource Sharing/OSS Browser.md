@@ -8,21 +8,21 @@
 
 访问 AccessKey
 
-![](./../../../images/OSS_Browser/%E8%AE%BF%E9%97%AE%20AccessKey.png)
+![访问 AccessKey](./../../../image/OSS%20Browser/%E8%AE%BF%E9%97%AE%20AccessKey.png)
 
 创建 AccessKey
 
-![创建 AccessKey](./../../../images/OSS_Browser/%E5%88%9B%E5%BB%BA%20AccessKey.png)
+![创建 AccessKey](./../../../image/OSS%20Browser/%E5%88%9B%E5%BB%BA%20AccessKey.png)
 
 ## 3 使用
 
 在 OSS Browser 填写 AccessKeyID 和 AccessKeySecret 登录
 
-![](./../../../images/OSS_Browser/%E5%9C%A8%20OSS%20Browser%20%E5%A1%AB%E5%86%99%20AccessKeyID%20%E5%92%8C%20AccessKeySecret%20%E7%99%BB%E5%BD%95.png)
+![在 OSS Browser 填写 AccessKeyID 和 AccessKeySecret 登录](./../../../image/OSS%20Browser/%E5%9C%A8%20OSS%20Browser%20%E5%A1%AB%E5%86%99%20AccessKeyID%20%E5%92%8C%20AccessKeySecret%20%E7%99%BB%E5%BD%95.png)
 
 选择一个 Bucket 上传文件
 
-![](./../../../images/OSS_Browser/%E9%80%89%E6%8B%A9%E4%B8%80%E4%B8%AA%20Bucket%20%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6.png)
+![选择一个 Bucket 上传文件](./../../../image/OSS%20Browser/%E9%80%89%E6%8B%A9%E4%B8%80%E4%B8%AA%20Bucket%20%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6.png)
 
 ---
 

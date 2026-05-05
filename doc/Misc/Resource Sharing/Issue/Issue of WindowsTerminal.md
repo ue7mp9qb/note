@@ -1,6 +1,6 @@
 在 WindowsTerminal 中输入空格会出现黑色背景
 
-![](./../../../../images/Issues_of_Windows_Terminal/%E5%9C%A8%20WindowsTerminal%20%E4%B8%AD%E8%BE%93%E5%85%A5%E7%A9%BA%E6%A0%BC%E4%BC%9A%E5%87%BA%E7%8E%B0%E9%BB%91%E8%89%B2%E8%83%8C%E6%99%AF.png)
+![在 WindowsTerminal 中输入空格会出现黑色背景](./../../../../image/Issue%20of%20WindowsTerminal/%E5%9C%A8%20WindowsTerminal%20%E4%B8%AD%E8%BE%93%E5%85%A5%E7%A9%BA%E6%A0%BC%E4%BC%9A%E5%87%BA%E7%8E%B0%E9%BB%91%E8%89%B2%E8%83%8C%E6%99%AF.png)
 
 安装或更新 PSReadline 即可 (以管理员身份运行)
 

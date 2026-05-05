@@ -32,7 +32,7 @@
 Received: from out203-205-221-235.mail.example.com (out203-205-221-235.mail.example.com. [1.1.1.1])
 ```
 
-![](./../../../images/CDN/%E8%8B%A5%E7%9B%AE%E6%A0%87%E7%BD%91%E7%AB%99%E5%8F%AF%E4%BD%BF%E7%94%A8%E9%82%AE%E7%AE%B1%E6%B3%A8%E5%86%8C,%20%E5%8F%AF%E4%BB%8E%E9%82%AE%E4%BB%B6%E4%B8%AD%E5%BE%97%E5%88%B0%E6%BA%90%20IP.png)
+![若目标网站可使用邮箱注册, 可从邮件中得到源 IP](./../../../image/CDN/%E8%8B%A5%E7%9B%AE%E6%A0%87%E7%BD%91%E7%AB%99%E5%8F%AF%E4%BD%BF%E7%94%A8%E9%82%AE%E7%AE%B1%E6%B3%A8%E5%86%8C,%20%E5%8F%AF%E4%BB%8E%E9%82%AE%E4%BB%B6%E4%B8%AD%E5%BE%97%E5%88%B0%E6%BA%90%20IP.png)
 
 ---
 

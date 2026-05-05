@@ -16,15 +16,15 @@ Import
 ubuntu_1404_temp
 ```
 
-![Import](./../../../images/metasploitable3/ubuntu_1404/Import.png)
+![Import](./../../../image/metasploitable3/ubuntu_1404/Import.png)
 
 Host-only
 
-![Host-only](./../../../images/metasploitable3/ubuntu_1404/Host-only.png)
+![Host-only](./../../../image/metasploitable3/ubuntu_1404/Host-only.png)
 
 Start
 
-![Start](./../../../images/metasploitable3/ubuntu_1404/Start.png)
+![Start](./../../../image/metasploitable3/ubuntu_1404/Start.png)
 
 Login
 
@@ -44,13 +44,13 @@ Export
 ubuntu_1404.ova
 ```
 
-![Export](./../../../images/metasploitable3/ubuntu_1404/Export.png)
+![Export](./../../../image/metasploitable3/ubuntu_1404/Export.png)
 
 Remove
 
 > Delete the virtual machine files and virtual hard disks
 
-![Remove](./../../../images/metasploitable3/ubuntu_1404/Remove.png)
+![Remove](./../../../image/metasploitable3/ubuntu_1404/Remove.png)
 
 ### 2.2. windows_2008_r2
 
@@ -60,19 +60,19 @@ Import
 windows_2008_r2_temp
 ```
 
-![Import](./../../../images/metasploitable3/windows_2008_r2/Import.png)
+![Import](./../../../image/metasploitable3/windows_2008_r2/Import.png)
 
 Host-only
 
-![Host-only](./../../../images/metasploitable3/windows_2008_r2/Host-only.png)
+![Host-only](./../../../image/metasploitable3/windows_2008_r2/Host-only.png)
 
 Start
 
-![Start](./../../../images/metasploitable3/windows_2008_r2/Start.png)
+![Start](./../../../image/metasploitable3/windows_2008_r2/Start.png)
 
 Insert Ctrl-Alt-Del
 
-![Insert Ctrl-Alt-Del](./../../../images/metasploitable3/windows_2008_r2/Insert%20Ctrl-Alt-Del.png)
+![Insert Ctrl-Alt-Del](./../../../image/metasploitable3/windows_2008_r2/Insert%20Ctrl-Alt-Del.png)
 
 Login
 
@@ -82,15 +82,15 @@ vagrant:vagrant
 
 Ask me later
 
-![Ask me later](./../../../images/metasploitable3/windows_2008_r2/Ask%20me%20later.png)
+![Ask me later](./../../../image/metasploitable3/windows_2008_r2/Ask%20me%20later.png)
 
 Restart Now
 
-![Restart Now](./../../../images/metasploitable3/windows_2008_r2/Restart%20Now.png)
+![Restart Now](./../../../image/metasploitable3/windows_2008_r2/Restart%20Now.png)
 
 Shut down
 
-![Shut down](./../../../images/metasploitable3/windows_2008_r2/Shut%20down.png)
+![Shut down](./../../../image/metasploitable3/windows_2008_r2/Shut%20down.png)
 
 Export
 
@@ -98,13 +98,13 @@ Export
 windows_2008_r2.ova
 ```
 
-![Export](./../../../images/metasploitable3/windows_2008_r2/Export.png)
+![Export](./../../../image/metasploitable3/windows_2008_r2/Export.png)
 
 Remove
 
 > Delete the virtual machine files and virtual hard disks
 
-![Remove](./../../../images/metasploitable3/windows_2008_r2/Remove.png)
+![Remove](./../../../image/metasploitable3/windows_2008_r2/Remove.png)
 
 ## 3. Deploy
 

@@ -4,7 +4,7 @@ Vim is a highly configurable text editor built to make creating and changing any
 
 添加到环境变量并取消创建桌面图标
 
-![添加到环境变量并取消创建桌面图标](./../../../../../images/vim/%E6%B7%BB%E5%8A%A0%E5%88%B0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%B9%B6%E5%8F%96%E6%B6%88%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%9B%BE%E6%A0%87.png)
+![添加到环境变量并取消创建桌面图标](./../../../../../image/vim/%E6%B7%BB%E5%8A%A0%E5%88%B0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%B9%B6%E5%8F%96%E6%B6%88%E5%88%9B%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%9B%BE%E6%A0%87.png)
 
 ## 2. 初始化
 
@@ -22,7 +22,7 @@ set noswapfile
 
 Vim 使用方法
 
-![Vim 使用方法](./../../../../../images/vim/Vim%20%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.jpg)
+![Vim 使用方法](./../../../../../image/vim/Vim%20%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.jpg)
 
 ## 4. 操作模式
 
