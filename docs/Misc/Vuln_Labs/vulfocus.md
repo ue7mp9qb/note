@@ -35,13 +35,9 @@ admin:admin
 
 ![修改系统配置](./../../../images/vulfocus/%E4%BF%AE%E6%94%B9%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE.png)
 
-|         Vulfocus          |
-| :-----------------------: |
-|   vulfocus/dvwa:latest    |
-|  vulfocus/pikachu:latest  |
-| vulfocus/xss-labs:latest  |
-| vulfocus/sqli-labs:latest |
-| glzjin/upload-labs:latest |
+|       Vulfocus       |
+| :------------------: |
+| vulfocus/dvwa:latest |
 
 ## 3. Usage
 
