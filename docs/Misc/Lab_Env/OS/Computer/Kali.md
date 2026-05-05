@@ -10,7 +10,7 @@ The most advanced Penetration Testing Distribution. Ever.
 Move the images file to the directory
 
 ```
-%UserProfile%\VirtualBox VMs\ISOs
+%UserProfile%\VirtualBox VMs\ISO
 ```
 
 Create a new virtual machine
@@ -22,7 +22,7 @@ Create a new virtual machine
 ```
 VM Name: kali
 VM Folder: C:\Users\null\VirtualBox VMs
-ISO lmage: C:\Users\null\VirtualBox VMs\ISOs\kali-linux-installer-amd64.iso
+ISO lmage: C:\Users\null\VirtualBox VMs\ISO\kali-linux-installer-amd64.iso
 OS Distribution: Debin
 OS Version: Debian (64-bit)
 Base Memory: 8192 MB

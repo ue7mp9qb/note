@@ -5,7 +5,7 @@ VirtualBox is a general-purpose full virtualization software for x86_64 hardware
 创建目录文件
 
 ```
-%UserProfile%\VirtualBox VMs\ISOs
+%UserProfile%\VirtualBox VMs\ISO
 ```
 
 设置虚拟机默认目录

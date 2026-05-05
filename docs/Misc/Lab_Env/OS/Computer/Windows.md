@@ -10,7 +10,7 @@ Windows is a product line of proprietary graphical operating systems developed a
 Move the images file to the directory
 
 ```
-%UserProfile%\VirtualBox VMs\ISOs
+%UserProfile%\VirtualBox VMs\ISO
 ```
 
 Create a new virtual machine
@@ -22,7 +22,7 @@ Create a new virtual machine
 ```
 VM Name: windows
 VM Folder: C:\Users\null\VirtualBox VMs
-ISO lmage: C:\Users\null\VirtualBox VMs\ISOs\en-us_windows_10_iot_enterprise_ltsc_2021_x64_dvd.iso
+ISO lmage: C:\Users\null\VirtualBox VMs\ISO\en-us_windows_10_iot_enterprise_ltsc_2021_x64_dvd.iso
 [ ] Proceed with Unattended Installation
 Base Memory: 8192 MB
 Number of CPUs: 2 CPU
@@ -250,11 +250,11 @@ PM needs to create a folder and install [VisualCppRedist AIO](https://github.com
     │    ├─Github
     |    ├─KeePassXC
     |    ├─VeraCrypt
-    |    └─Keys
+    |    └─Key
     └─Pictures
     |    └─ScreenClip
     └─VirtualBox VMs
-         └─ISOs
+         └─ISO
 ```
 
 > ScreenClip Shortcut
