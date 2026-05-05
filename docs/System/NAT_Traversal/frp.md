@@ -6,7 +6,7 @@ A fast reverse proxy to help you expose a local server behind a NAT or firewall 
 
 ```
 ┌──(root@kali)-[~]
-└─$ curl -fsSL https://github.com/ue7mp9qb/scripts/raw/main/frp_install.sh | bash
+└─$ curl -fsSL https://github.com/ue7mp9qb/script/raw/main/frp_install.sh | bash
 ```
 
 ## 2. Init

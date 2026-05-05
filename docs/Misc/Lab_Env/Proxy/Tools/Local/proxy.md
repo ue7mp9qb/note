@@ -6,7 +6,7 @@
 
 ```
 ┌──(root㉿kali)-[~]
-└─# curl -fsSL https://github.com/ue7mp9qb/scripts/raw/main/proxy_install.sh | bash
+└─# curl -fsSL https://github.com/ue7mp9qb/script/raw/main/proxy_install.sh | bash
 ```
 
 加载环境变量
