@@ -35,21 +35,21 @@ Git is a free and open source distributed version control system designed to han
 配置代理
 
 ```
-PS C:\Users\null> git config --global http.proxy "socks5://127.0.0.1:10808"
+PS C:\Users\null> git config --global http.proxy "http://127.0.0.1:10808"
 ```
 
 ```
-PS C:\Users\null> git config --global https.proxy "socks5://127.0.0.1:10808"
-```
-
-```
-┌──(root㉿kali)-[~]
-└─# git config --global http.proxy "socks5://10.0.2.2:10808"
+PS C:\Users\null> git config --global https.proxy "http://127.0.0.1:10808"
 ```
 
 ```
 ┌──(root㉿kali)-[~]
-└─# git config --global https.proxy "socks5://10.0.2.2:10808"
+└─# git config --global http.proxy "http://10.0.2.2:10808"
+```
+
+```
+┌──(root㉿kali)-[~]
+└─# git config --global https.proxy "http://10.0.2.2:10808"
 ```
 
 配置用户名

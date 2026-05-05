@@ -226,7 +226,7 @@ Configuring Apt Sources
 
 ```
 ┌──(root㉿kali)-[~]
-└─# sed -i "s@http://http.kali.org/kali@https://mirrors.ustc.edu.cn/kali@g" /etc/apt/sources.list
+└─# sed -i "s@http://http.kali.org/kali@https://mirrors.tuna.tsinghua.edu.cn/kali@g" /etc/apt/sources.list
 ```
 
 Keep SSH session alive

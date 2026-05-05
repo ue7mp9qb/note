@@ -127,6 +127,10 @@ References
 - [A better zip bomb](https://www.bamsoftware.com/hacks/zipbomb/)
 - [XML 拒绝服务攻击和防御](https://learn.microsoft.com/zh-cn/archive/msdn-magazine/2009/november/xml-denial-of-service-attacks-and-defenses)
 
+## 用户名 DoS
+
+这个只是猜测, 若目标未对用户名的长度做限制, 可能造成 DoS
+
 ---
 
 **References**

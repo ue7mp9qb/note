@@ -25,8 +25,8 @@ A safer container ecosystem.
 └─$ mkdir -p /etc/systemd/system/docker.service.d \
 && tee /etc/systemd/system/docker.service.d/http-proxy.conf > /dev/null << 'EOF'
 [Service]
-Environment="HTTP_PROXY=sock5://10.0.2.2:10808"
-Environment="HTTPS_PROXY=socks5://10.0.2.2:10808"
+Environment="HTTP_PROXY=http://10.0.2.2:10808"
+Environment="HTTPS_PROXY=http://10.0.2.2:10808"
 Environment="NO_PROXY=localhost,10.0.2.2,192.168.0.0/16,::1"
 EOF
 ```
