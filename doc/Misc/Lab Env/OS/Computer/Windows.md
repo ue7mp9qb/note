@@ -209,23 +209,23 @@ PS C:\Windows\system32> Get-NetConnectionProfile
 Change the network profile to Private or Public
 
 ```
-PS C:\Windows\system32> Set-NetConnectionProfile -InterfaceIndex <value> -NetworkCategory Private
+PS C:\Windows\system32> Set-NetConnectionProfile -InterfaceIndex <INTERFACEINDEX-VALUE> -NetworkCategory Private
 ```
 
 ```
-PS C:\Windows\system32> Set-NetConnectionProfile -InterfaceIndex <value> -NetworkCategory Public
+PS C:\Windows\system32> Set-NetConnectionProfile -InterfaceIndex <INTERFACEINDEX-VALUE> -NetworkCategory Public
 ```
 
 View the DNS server addresses
 
 ```
-PS C:\Windows\system32> Get-DnsClientServerAddress -InterfaceIndex <value>
+PS C:\Windows\system32> Get-DnsClientServerAddress -InterfaceIndex <INTERFACEINDEX-VALUE>
 ```
 
 Set a static DNS server address
 
 ```
-PS C:\Windows\system32> Set-DnsClientServerAddress -InterfaceIndex <value> -ServerAddresses ("223.5.5.5","119.29.29.29")
+PS C:\Windows\system32> Set-DnsClientServerAddress -InterfaceIndex <INTERFACEINDEX-VALUE> -ServerAddresses ("223.5.5.5","119.29.29.29")
 ```
 
 Update and configure Windows and Edge
@@ -234,7 +234,7 @@ Update and configure Windows and Edge
 
 [Power Options](# 6.25. Power Options)
 
-Use [Office Deployment Tool](https://keithpeck177271.gitbook.io/notes/docs/misc/lab_env/office/file_editing/microsoft_office/office_deployment_tool) to install Word, Excel, PowerPoint
+Use [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) to install Word, Excel, PowerPoint
 
 VM needs to create a folder and add exclusions
 
